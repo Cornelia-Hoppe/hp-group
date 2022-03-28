@@ -10,15 +10,12 @@ export default function Modal() {
     let closeModal = ctx.setOpenModal
 
     return(
-        <section className="modalBackground">
-            <div className="modal">
-                <button onClick={()=> closeModal(false)} className='modal--x'>X</button>
-
+        <section className="modalBackground" onClick={()=> closeModal(false)}>
+            <div className="modal-card">
                 {listData[indexModal].image 
                     ? (<img src={listData[indexModal].image} alt={listData[indexModal].name} className='modal--image'/>) 
                     : (<img src={logo} alt={listData[indexModal].name} className='modal--image'/>)
                 }
-
                 <div className="modal--info">
                     <h1>{listData[indexModal].name}</h1>
                     {listData[indexModal].hogwartsStudent 
@@ -27,9 +24,18 @@ export default function Modal() {
                         ? (<p>Staff</p>) : (<p></p>)
                     }
                     <h2>House: {listData[indexModal].house}</h2>
-                    <h2>Patronus: {listData[indexModal].patronus.charAt(0).toUpperCase()+listData[indexModal].patronus.slice(1)}</h2>
-                    <h2>Date of birth: {listData[indexModal].dateOfBirth}</h2>
-                    <h2>Actor: {listData[indexModal].actor}</h2> 
+                    {listData[indexModal].patronus 
+                        ? (<h2>Patronus: {listData[indexModal].patronus.charAt(0).toUpperCase()+listData[indexModal].patronus.slice(1)}</h2>)
+                        : (<h2></h2>)
+                    }
+                    {listData[indexModal].dateOfBirth
+                        ? (<h2>Date of birth: {listData[indexModal].dateOfBirth}</h2>)
+                        : (<h2></h2>)
+                    }
+                    {listData[indexModal].actor
+                        ? (<h2>Actor: {listData[indexModal].actor}</h2>)
+                        : (<h2></h2>)
+                    }
                 </div>                
             </div>
         </section>
