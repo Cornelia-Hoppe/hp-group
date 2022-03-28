@@ -4,7 +4,7 @@ import CharacterList from '../Components/Gryffindor/CharacterList'
 import Logo from '../Components/Gryffindor/Logo'
 import Modal from '../Components/Gryffindor/Modal'
 import Search from '../Components/Gryffindor/Search'
-import Navbar from '../Components/Gryffindor/Navbar'
+import Navbar from '../Components/Nav'
 import "../styles/Gryffindor.css"
 
 export const GlobalContext = createContext()
