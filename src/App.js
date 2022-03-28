@@ -1,11 +1,12 @@
 import React from "react"
 import "./style.css"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import Home from "./Views/Home"
-import Gryffindor from "./Views/Gryffindor"
-import Slytherin from "./Views/Slytherin"
-import Hufflepuff from "./Views/Hufflepuff"
-import Ravenclaw from "./Views/Ravenclaw"
+import Home from "./views/Home"
+import Gryffindor from "./views/Gryffindor"
+import Slytherin from "./views/Slytherin"
+import Hufflepuff from "./views/Hufflepuff"
+import Ravenclaw from "./views/Ravenclaw"
+
 
 
 
