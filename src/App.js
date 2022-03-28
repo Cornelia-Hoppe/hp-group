@@ -1,4 +1,5 @@
 import React from "react"
+import "./style.css"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./views/Home"
 import Gryffindor from "./views/Gryffindor"
