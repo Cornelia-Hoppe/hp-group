@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { GlobalContext } from "../../views/Gryffindor";
+import { GlobalContext } from "../../Views/Gryffindor";
 
 export default function MenuItems({item}) {
 

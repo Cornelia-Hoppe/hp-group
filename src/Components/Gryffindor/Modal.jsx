@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { GlobalContext } from "../../views/Gryffindor";
+import { GlobalContext } from "../../Views/Gryffindor";
 import logo from '../../images/gryffindor-logo.png'
 
 export default function Modal() {

@@ -1,7 +1,9 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, createContext} from "react";
 import "../styles/Ravenclaw.css"
 import CharacterCard from "../Components/Ravenclaw/character-card/CharacterCard";
 import Header from "../Components/Ravenclaw/header/Header";
+
+export const RavenclawContext = createContext();
 
 export default function RavenclawPage()
 {
@@ -31,13 +33,15 @@ export default function RavenclawPage()
     //som fås från karaktärens namn
     //I header componenten så skickar vi med två props med värdet av vår characterList och vår setFilteredCharacterList-funktion.
     return(
-        <div className="Ravenclaw-Page">
-            <Header characterList={characterList} setFilteredCharacterList={setFilteredCharacterList} />
-            <div className="main-container">
-            {
-            filteredCharacterList.map(character => <CharacterCard name={character.name} />)
-            }
+        <RavenclawContext.Provider value={{characterList, setFilteredCharacterList}}>
+            <div className="Ravenclaw-Page">
+                <Header />
+                <div className="main-container">
+                {
+                filteredCharacterList.map(character => <CharacterCard name={character.name} image={character.image} hogwartsStaff={character.hogwartsStaff} hogwartsStudent={character.hogwartsStudent} gender={character.gender} ancestry={character.ancestry} species={character.species} />)
+                }
+                </div>
             </div>
-        </div>
+        </RavenclawContext.Provider>
     )
 };

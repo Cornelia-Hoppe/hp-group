@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { GlobalContext } from '../../views/Gryffindor'
+import { GlobalContext } from '../../Views/Gryffindor'
 
 export default function CharacterList() {
 
