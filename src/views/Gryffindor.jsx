@@ -6,7 +6,7 @@ import Modal from '../Components/Gryffindor/Modal'
 import Search from '../Components/Gryffindor/Search'
 import Footer from '../Components/Gryffindor/Footer'
 import Navbar from '../Components/Gryffindor/Navbar'
-import '../Components/Gryffindor/gryffindor.css'
+import "../styles/Gryffindor.css"
 
 export const GlobalContext = createContext()
 

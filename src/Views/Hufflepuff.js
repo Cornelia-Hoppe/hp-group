@@ -1,4 +1,4 @@
-import "./Hufflepuff.css" 
+import "../styles/Hufflepuff.css"
 import React from 'react';
 import Main from '../Components/Hufflepuff/Main';
 import Nav from '../Components/Hufflepuff/Nav';

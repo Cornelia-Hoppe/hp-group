@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
-import "./RavenclawPage.css";
-import CharacterCard from "../character-card/CharacterCard";
-import Header from "../header/Header";
+import "../styles/Ravenclaw.css"
+import CharacterCard from "../Components/Ravenclaw/character-card/CharacterCard";
+import Header from "../Components/Ravenclaw/header/Header";
 
 export default function RavenclawPage()
 {
