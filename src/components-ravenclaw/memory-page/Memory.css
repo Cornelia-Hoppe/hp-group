@@ -1,0 +1,7 @@
+.memoryContainer{
+    display: grid;
+    row-gap: 10px;
+    column-gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    width: 400px;
+}
