@@ -93,7 +93,8 @@ export default function Gryffindor() {
   
   return (
     <GlobalContext.Provider value={{listData, searchTerm, setSearchTerm, openModal, setOpenModal, indexModal, setIndexModal, chosenMenu, setChosenMenu}}>
-        <header>
+      <div className='gryffindor-body'>
+        <header className='gryffindor-header'>
           <Navbar />
           <Logo />
         </header>
@@ -105,7 +106,8 @@ export default function Gryffindor() {
         <CharacterList />
         {openModal && <Modal />}
         </main>
-        <Footer />
+        <Footer />      
+      </div>  
     </GlobalContext.Provider>
   )
 }
