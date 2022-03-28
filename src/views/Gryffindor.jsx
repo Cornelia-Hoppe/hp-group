@@ -4,7 +4,6 @@ import CharacterList from '../Components/Gryffindor/CharacterList'
 import Logo from '../Components/Gryffindor/Logo'
 import Modal from '../Components/Gryffindor/Modal'
 import Search from '../Components/Gryffindor/Search'
-import Footer from '../Components/Gryffindor/Footer'
 import Navbar from '../Components/Gryffindor/Navbar'
 import "../styles/Gryffindor.css"
 
@@ -35,27 +34,6 @@ export default function Gryffindor() {
       getData()
     }, [chosenMenu]);// eslint-disable-line react-hooks/exhaustive-deps
       
-    // const getListData = (data) => {
-    //   if (chosenMenu === 'Male' || chosenMenu === 'Female') {
-    //     const gender = allData.filter(x => x.gender === chosenMenu.toLowerCase())
-    //     setListData(gender);
-    //   } else if (chosenMenu === 'Half-blood' || chosenMenu === 'Muggleborn' || chosenMenu === 'Pure-blood') {
-    //     const ancestry = allData.filter(x => x.ancestry === chosenMenu.toLowerCase())
-    //     setListData(ancestry);
-    //   } else if (chosenMenu === 'Human' || chosenMenu === 'Ghost' || chosenMenu === 'Half-giant' || chosenMenu === 'Werewolf') {
-    //     const species = allData.filter(x => x.species === chosenMenu.toLowerCase())
-    //     setListData(species);
-    //   } else if (chosenMenu === 'Student') {
-    //     const student = allData.filter(x => x.hogwartsStudent === true)
-    //     setListData(student);
-    //   } else if (chosenMenu === 'Staff') {
-    //     const staff = allData.filter(x => x.hogwartsStaff === true)
-    //     setListData(staff);
-    //   } else {
-    //     setListData(data);
-    //   }  
-    // }
-
     const getListData = (data) => {
       switch (chosenMenu) {
         case 'Male':
@@ -89,7 +67,6 @@ export default function Gryffindor() {
           break;
       }
     }
-
   
   return (
     <GlobalContext.Provider value={{listData, searchTerm, setSearchTerm, openModal, setOpenModal, indexModal, setIndexModal, chosenMenu, setChosenMenu}}>
@@ -106,7 +83,6 @@ export default function Gryffindor() {
         <CharacterList />
         {openModal && <Modal />}
         </main>
-        <Footer />      
       </div>  
     </GlobalContext.Provider>
   )
