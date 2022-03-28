@@ -8,7 +8,6 @@ import Navbar from '../Components/Gryffindor/Navbar'
 import "../styles/Gryffindor.css"
 
 export const GlobalContext = createContext()
-
 export default function Gryffindor() {
 
     const apiUrl = 'http://hp-api.herokuapp.com/api/characters/house/gryffindor'
