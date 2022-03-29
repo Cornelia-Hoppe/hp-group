@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import logoHouse from '../images/house.png'
-import './Nav.css'
 
 export default function Nav() {
 
@@ -15,7 +14,6 @@ export default function Nav() {
             <NavLink activeClassName="active" to='/hufflepuff'>Hufflepuff</NavLink>
             <NavLink activeClassName="active" to='/ravenclaw'>Ravenclaw</NavLink>
         </nav>
-      
       </section>
   )
 }
