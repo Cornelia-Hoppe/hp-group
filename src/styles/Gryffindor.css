@@ -1,3 +1,9 @@
+:root{
+    --color-red: #5a0e0e;
+    --color-white: whitesmoke;
+    --color-orange: orange;
+}
+
 *{
     margin:0;
     padding: 0;
@@ -20,58 +26,75 @@
     justify-content: center;
     align-items: center;
 }
-
-.header--logo{
+.gryffindor-header--logo{
     text-align: center;
+    margin-bottom: 1rem;
+    color: var(--color-orange);
 }
 .gryffindor-header img{
     width: 100px;
-    margin: 1rem 0;
 }
 
-
-main{
+.gryffindor-main{
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-main > div{
-    display: flex;
-    justify-content: space-between;
-}
+
 
 
 .search--input{
-    text-align: left;
+    text-align: center;
     height: 40px;
     background-color: transparent;
-    color: antiquewhite;
+    color: var(--color-white);
     width: 250px;
+    border: none;
+    border-bottom: white 1px solid;
+    font-family: 'Cinzel', serif;
+    margin-top: 1rem;
 }
-input::placeholder{
-    color: antiquewhite;
-    padding: 0;
+.search--input::placeholder{
+    color: var(--color-white);
+    text-align: center;
 }
 
 
 
 .menu{
     display: flex;
-    margin: 1rem 0;
 }
-
-button{
-    min-width: 100px;
-    padding: 0 0.5rem;
-    margin: 0 0.5rem;
+.menu-button{
+    width: 130px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Cinzel', serif;
+    font-size: 16px;  
+    color: var(--color-white);
 }
-button:hover{
+.menu-button:hover{
     cursor: pointer;
-    background-color: orange;
+    background-color: var(--color-orange);
+    color: var(--color-red);
 }
-
 .fa-angle-down{
     margin-left: 0.5rem;
+    transition: 0.2s ease;
+}
+.dropdown {
+    display: none;
+}
+.dropdown.show {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: var(--color-red);
+    padding: 0;
+}
+.dropdown.show > button {
+    text-align: left;
 }
 
 
@@ -79,14 +102,30 @@ button:hover{
 .characters{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
 }
-
 .characters h3{
     margin: 1rem 0;
+    width: fit-content;
+}
+.characters h3::after{
+    content: '';
+    display: flex;
+    width: 0;
+    border-bottom: white 1px solid;
+    transition: 0.5s ease;
 }
 .characters h3:hover{
     cursor: pointer;
-    color: yellow;
+    color: var(--color-orange);
+}
+.characters h3:hover::after{
+    cursor: pointer;
+    color: var(--color-orange);
+    border-bottom: white 1px solid;
+    width: 100%;
 }
 
 
@@ -102,17 +141,16 @@ button:hover{
 }
 .modal-card{
     position: relative;
-    background-color: #5a0e0e;
-    color: whitesmoke;
+    background-color: var(--color-red);
+    color: var(--color-orange);
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 20px;        
+    border-radius: 20px;      
 }
-
 .modal--image{
     width: 100%;
-    height: 400px;
+    height: 550px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -120,15 +158,3 @@ button:hover{
     text-align: left;
     padding: 1rem;
 }
-
-
-
-
-.dropdown {
-    display: none;
-}
-.dropdown.show {
-    display: flex;
-    flex-direction: column;
-}
-
