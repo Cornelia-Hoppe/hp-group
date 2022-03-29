@@ -4,7 +4,7 @@ import CharacterList from '../Components/Gryffindor/CharacterList'
 import Logo from '../Components/Gryffindor/Logo'
 import Modal from '../Components/Gryffindor/Modal'
 import Search from '../Components/Gryffindor/Search'
-import Navbar from '../Components/Nav'
+import Nav from '../Components/Nav'
 import "../styles/Gryffindor.css"
 
 export const GlobalContext = createContext()
@@ -71,7 +71,7 @@ export default function Gryffindor() {
     <GlobalContext.Provider value={{listData, searchTerm, setSearchTerm, openModal, setOpenModal, indexModal, setIndexModal, chosenMenu, setChosenMenu}}>
       <div className='gryffindor-body'>
         <header className='gryffindor-header'>
-          <Navbar />
+          <Nav />
           <Logo />
         </header>
         <main>
