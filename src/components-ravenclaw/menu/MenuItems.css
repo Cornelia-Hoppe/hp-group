@@ -1,0 +1,11 @@
+.dropdown {
+    display: none;
+}
+.dropdown.show {
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-angle-down{
+    margin-left: 0.5rem;
+}

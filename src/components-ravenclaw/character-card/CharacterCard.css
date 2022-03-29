@@ -1,7 +1,25 @@
 .character-card{
     width:150px;
     height: 200px;
+    text-align: center;
     background-color: blue;
     margin-left: 50px;
     margin-top: 20px;
 }
+
+/* Modal styling  */
+.modal{
+    width: 100px;
+    height: 100px;
+}
+
+.modal-content{
+    width: 100%;
+    height: 100%,
+}
+
+.modal-image{
+    width: 50%;
+    height: 50%;
+}
+

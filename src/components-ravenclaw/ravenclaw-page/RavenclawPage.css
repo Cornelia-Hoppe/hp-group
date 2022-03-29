@@ -1,4 +1,6 @@
 .Ravenclaw-Page{
+    background-image: url("../../../public/bgBlue.png");
+    background-size: contain;
     background-color: #cd7f32;
     display:flex;
     flex-direction: column;
@@ -8,5 +10,4 @@
 .main-container{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    background-color: black;
 }
