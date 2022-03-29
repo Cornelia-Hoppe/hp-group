@@ -28,6 +28,7 @@ export default function Gryffindor() {
           getListData(data)          
         } catch (error) {
           console.log(error);
+          console.log('something went wrong with api!!!!!');
         }
       }
       getData()
@@ -69,20 +70,18 @@ export default function Gryffindor() {
   
   return (
     <GlobalContext.Provider value={{listData, searchTerm, setSearchTerm, openModal, setOpenModal, indexModal, setIndexModal, chosenMenu, setChosenMenu}}>
-      <div className='gryffindor-body'>
+      <section className='gryffindor-body'>
         <header className='gryffindor-header'>
           <Nav />
           <Logo />
         </header>
-        <main>
-        <div>
+        <main className='gryffindor-main'>
           <Menu />
           <Search />
-        </div>
-        <CharacterList />
-        {openModal && <Modal />}
+          <CharacterList />
+          {openModal && <Modal />}
         </main>
-      </div>  
+      </section>  
     </GlobalContext.Provider>
   )
 }
