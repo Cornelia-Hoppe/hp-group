@@ -6,6 +6,7 @@ import Gryffindor from "./Views/Gryffindor"
 import Slytherin from "./Views/Slytherin"
 import Hufflepuff from "./Views/Hufflepuff"
 import Ravenclaw from "./Views/Ravenclaw"
+import House from './Views/House'
 
 export default function App() {
 
@@ -17,6 +18,7 @@ export default function App() {
             <Route path="/slytherin" element={<Slytherin />}/> 
             <Route path="/hufflepuff" element={<Hufflepuff />}/>
             <Route path="/ravenclaw" element={<Ravenclaw />}/>  
+            <Route path="/house" element={<House />}/>  
           </Routes>
         </Router>
     )

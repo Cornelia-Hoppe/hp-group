@@ -9,10 +9,10 @@ export default function Nav() {
         <NavLink to='/'><img src={logoHouse} alt="Hogwarts Houses" /></NavLink>
         <nav>
             <NavLink to='/'>Home</NavLink>
-            <NavLink activeClassName="active" to='/gryffindor'>Gryffindor</NavLink>
-            <NavLink activeClassName="active" to='/slytherin'>Slytherin</NavLink>
-            <NavLink activeClassName="active" to='/hufflepuff'>Hufflepuff</NavLink>
-            <NavLink activeClassName="active" to='/ravenclaw'>Ravenclaw</NavLink>
+            <NavLink ClassName="active" to='/gryffindor'>Gryffindor</NavLink>
+            <NavLink ClassName="active" to='/slytherin'>Slytherin</NavLink>
+            <NavLink ClassName="active" to='/hufflepuff'>Hufflepuff</NavLink>
+            <NavLink ClassName="active" to='/ravenclaw'>Ravenclaw</NavLink>
         </nav>
       </section>
   )
