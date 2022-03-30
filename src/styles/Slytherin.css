@@ -1,0 +1,110 @@
+
+  
+
+
+  
+  button{
+    color: white;
+    background: none;
+    font-size: 20px;
+    border: none;
+  }
+  
+  
+  .navbar-slytherin {
+    background:none;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+  
+  .navbar-nav-slytherin {
+    max-width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 4px;
+    background: none;
+  }
+
+
+  .SlytherinDisp {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+
+  }
+  
+  .nav-item {
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-slytherin {
+    background-color: #155715;
+    border-radius: 5px;
+    border-style: none;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 300ms;
+  }
+  
+  .icon-slytherin:hover {
+    filter: brightness(1.2);
+  }
+  
+  
+.slytherin-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header--logo{
+    text-align: center;
+}
+.slytherin-header img{
+    width: 100px;
+    margin: 1rem 0;
+}
+  .dropdown-slytherin {
+    position: absolute;
+    top : 300px;
+    right: 400px;
+    transform: translateX(-45%);
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+    border: 3px solid #155715;
+    background-color: #000;
+    
+  }
+ 
+  .navbar-slytherin input {
+    margin-right: 30px;
+    margin-top: 5px;
+    background-color: lightgray;
+    border-radius: 5px;
+    height: 20px;
+    width: 100px;
+  }
+
+  .modal-slytherin {
+    font-size:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal-slytherin img{
+    width:90px ;
+  }
+  

@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import {WizardCard} from '../Components/Slytherin/WizardCard';
-import {NavItem, Navbar} from "../Components/Slytherin/Navbar"
+import {NavItem, NavbarSlytherin} from "../Components/Slytherin/Navbar"
 import Modal from '../Components/Slytherin/Modal';
+import "../styles/Slytherin.css"
+import "../style.css"
+import Navbar from "../Components/Nav"
+import logoSlytherin from '../images/slytherin-logo.png'
+import Quote from '../Components/Quotes';
+
 
 function App() {
 
@@ -26,7 +32,7 @@ useEffect(() => {
 function DropdownMenuGender(){
 
   return (
- <div className='dropdown'>
+ <div className='dropdown-slytherin'>
     <button onClick={()=> setActive("FemaleCard")} >Female</button>
     <button onClick={()=> setActive("MaleCard")} >Male</button>
  </div>
@@ -36,7 +42,7 @@ function DropdownMenuGender(){
 function DropdownMenuOccupation(){
 
   return (
- <div className='dropdown'>
+ <div className='dropdown-slytherin'>
     <button onClick={()=> setActive("StudentCard")} >Student</button>
     <button onClick={()=> setActive("StaffCard")} >Staff</button>
  </div>
@@ -45,7 +51,7 @@ function DropdownMenuOccupation(){
 function DropdownMenuSpecies(){
 
   return (
- <div className='dropdown'>
+ <div className='dropdown-slytherin'>
     <button onClick={()=> setActive("HumanCard")} >Human</button>
     <button onClick={()=> setActive("OtherCard")} >Other</button>
  </div>
@@ -55,7 +61,7 @@ function DropdownMenuSpecies(){
 function DropdownMenuAncestry(){
 
   return (
- <div className='dropdown'>
+ <div className='dropdown-slytherin'>
     <button onClick={()=> setActive("HalfBloodCard")} >Half-blood</button>
     <button onClick={()=> setActive("PureBloodCard")} >Pure-blood</button>
     <button onClick={()=> setActive("MuggleCard")} >Muggleborn</button>
@@ -73,7 +79,10 @@ const [searchTerm, setSerchTerm] = useState('');
 
 return (
   <>
-  <Navbar>
+  <header className='slytherin-header'>
+  <Navbar />
+  <img src={logoSlytherin} alt="Slytherin" />
+  <NavbarSlytherin>
   <input type="text" placeholder='Search...' onChange={event =>{setSerchTerm(event.target.value)}} />
   <NavItem icon= "Species" >
     < DropdownMenuSpecies />
@@ -87,24 +96,26 @@ return (
     <NavItem icon= "Gender">
      < DropdownMenuGender />
     </NavItem>
-  </Navbar>
-
+  </NavbarSlytherin>
+  </header>
  
   
 
 
-  <Modal className='modaal' open={isOpen} onClose={() => setIsOpen(false)}>
+  <Modal open={isOpen} onClose={() => setIsOpen(false)}>
 
   {wizards.map((data, index) =>{ 
    if (index === clickedIndex) {
-     return <div>
-     <h2>Name:</h2> <WizardCard 
-        data={wizards[clickedIndex].name} 
-      />
-     <h3>Actor:</h3> <WizardCard 
-        actor={wizards[clickedIndex].actor}
-      />
-        <img src={wizards[clickedIndex].image} alt='caracter'/>
+     return <div className='modal-slytherin'>
+       <img src={wizards[clickedIndex].image} alt='caracter'/>
+       {wizards[clickedIndex].hogwartsStudent 
+                        ? (<p>Student</p>) 
+                        : wizards[clickedIndex].hogwartsStaff 
+                        ? (<p>Staff</p>) : (<p></p>)
+                    }
+     <p>Name:</p><WizardCard data={wizards[clickedIndex].name} />
+     <p>Actor:</p><WizardCard actor={wizards[clickedIndex].actor}/>
+     <p>Patronus:</p><WizardCard patronus={wizards[clickedIndex].patronus}/>
         </div>
     }
  })}
@@ -112,7 +123,7 @@ return (
   </Modal>
 
   {active === "FirstCard" && 
-  <card className='alWizardDisp'>
+  <card className='alWizardDisp , SlytherinDisp'>
     {wizards.filter((data)=>{
     if (searchTerm == '' ) {
       return data
@@ -127,7 +138,7 @@ return (
   
   </card> }
   {active === "FemaleCard" && 
-  <card className='femaleDisp'>
+  <card className='femaleDisp , SlytherinDisp'>
  {wizards.filter((data)=>{
     if (searchTerm === '' ) {
       return data
@@ -141,7 +152,7 @@ return (
  })}
   </card> }
   {active === "MaleCard" && 
-  <card className='maleDisp'>
+  <card className='maleDisp  , SlytherinDisp'>
  {wizards.filter((data)=>{
     if (searchTerm == '' ) {
       return data
@@ -155,7 +166,7 @@ return (
  })}
   </card> }
   {active === "StaffCard" && 
-  <card className='StaffDisp'>
+  <card className='StaffDisp  , SlytherinDisp'>
  {wizards.filter((data)=>{
     if (searchTerm == '' ) {
       return data
@@ -168,7 +179,7 @@ return (
  })}
   </card> }
   {active === "StudentCard" && 
-  <card className='StudentDisp'>
+  <card className='StudentDisp  , SlytherinDisp'>
  {wizards.filter((data)=>{
     if (searchTerm == '' ) {
       return data
@@ -181,7 +192,7 @@ return (
  })}
   </card> }
   {active === "HalfBloodCard" && 
-  <card className='StudentDisp'>
+  <card className='StudentDisp  , SlytherinDisp'>
  {wizards.filter((data)=>{
     if (searchTerm == '' ) {
       return data
@@ -195,7 +206,7 @@ return (
  })}
   </card> }
   {active === "PureBloodCard" && 
-  <card className='StudentDisp'>
+  <card className='StudentDisp  , SlytherinDisp'>
  {wizards.filter((data)=>{
     if (searchTerm === '' ) {
       return data
@@ -209,7 +220,7 @@ return (
  })}
   </card> }
   {active === "MuggleCard" && 
-  <card className='StudentDisp'>
+  <card className='StudentDisp  , SlytherinDisp'>
  {wizards.filter((data)=>{
     if (searchTerm === '' ) {
       return data
@@ -223,7 +234,7 @@ return (
  })}
   </card> }
   {active === "HumanCard" && 
-  <card className='StudentDisp'>
+  <card className='StudentDisp , SlytherinDisp'>
  {wizards.filter((data)=>{
     if (searchTerm === '' ) {
       return data
@@ -237,7 +248,7 @@ return (
  })}
   </card> }
   {active === "OtherCard" && 
-  <card className='StudentDisp'>
+  <card className='StudentDisp , SlytherinDisp'>
  {wizards.filter((data)=>{
     if (searchTerm === '' ) {
       return data
@@ -250,7 +261,9 @@ return (
     }
  })}
   </card> }
+  <Quote/>
   </>
+  
 );
     }
 

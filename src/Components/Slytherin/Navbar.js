@@ -2,10 +2,10 @@ import React, {useState} from 'react'
 
 
 
-export function Navbar(props){
+export function NavbarSlytherin(props){
   return (
-    <nav className='navbar'>
-      <ul className='navbar-nav'> {props.children} </ul>
+    <nav className='navbar-slytherin'>
+      <ul className='navbar-nav-slytherin'> {props.children} </ul>
     </nav>
   )
 }
@@ -18,7 +18,7 @@ export function NavItem(props){
 
   return (
     <li className='nav-item'>
-      <button className='icon-button' onClick={() => setOpen(!open)}>
+      <button className='icon-slytherin' onClick={() => setOpen(!open)}>
         {props.icon}
       </button>
       {open && props.children}
