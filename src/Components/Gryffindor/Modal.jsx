@@ -12,12 +12,12 @@ export default function Modal() {
     return(
         <section className="modalBackground" onClick={()=> closeModal(false)}>
             <div className="modal-card">
+                <h2>{listData[indexModal].name}</h2>
                 {listData[indexModal].image 
                     ? (<img src={listData[indexModal].image} alt={listData[indexModal].name} className='modal--image'/>) 
                     : (<img src={logo} alt={listData[indexModal].name} className='modal--image'/>)
                 }
                 <div className="modal--info">
-                    <h1>{listData[indexModal].name}</h1>
                     {listData[indexModal].hogwartsStudent 
                         ? (<p>Student</p>) 
                         : listData[indexModal].hogwartsStaff 

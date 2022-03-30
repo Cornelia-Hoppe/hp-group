@@ -23,7 +23,6 @@ export default function CharacterList() {
           <h3 key={index} onClick={()=>handleClick(index)}>{data.name}</h3>
          
         ))}
-      
     </section>
   )
 }

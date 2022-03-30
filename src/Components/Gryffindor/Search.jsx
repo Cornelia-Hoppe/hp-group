@@ -8,7 +8,7 @@ export default function Search() {
 
   return (
     <section className='search'>
-      <input type='text' placeholder="Search here..." className="search--input" onChange={(e) => {search(e.target.value)}} />
+      <input type='text' placeholder="Search here...." className="search--input" onChange={(e) => {search(e.target.value)}} />
     </section>
   )
 }
