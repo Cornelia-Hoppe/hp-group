@@ -13,15 +13,14 @@ export default function House() {
       <div className="house-container-h">
         <div>
           <Link to="/">
-            <img id="house-logo-h" src={HouseLogo} />{" "}
+            <img id="house-logo-h" src={HouseLogo} />
           </Link>
           <h1>CHOOSE HOUSE</h1>
         </div>
         <div className="house-images-h">
           <div className="house-row-h">
             <div className="single-house-h" id="gryffindor-h">
-              <Link to="/">
-                {" "}
+              <Link to="/gryffindor">
                 <img src={Gryffindor} />
               </Link>
               <Link className="link-h" to="/gryffindor">
@@ -29,7 +28,7 @@ export default function House() {
               </Link>
             </div>
             <div className="single-house-h" id="slytherin-h">
-              <Link to="/">
+              <Link to="/slytherin">
                 <img src={Slytherin} />
               </Link>
               <Link className="link-h" to="/slytherin">
@@ -39,7 +38,7 @@ export default function House() {
           </div>
           <div className="house-row-h">
             <div className="single-house-h" id="ravenclaw-h">
-              <Link to="/">
+              <Link to="/ravenclaw">
                 <img src={Ravenclaw} />
               </Link>
               <Link className="link-h" to="/ravenclaw">
@@ -47,7 +46,7 @@ export default function House() {
               </Link>
             </div>
             <div className="single-house-h" id="hufflepuff-h">
-              <Link to="/">
+              <Link to="/hufflepuff">
                 <img src={Hufflepuff} />
               </Link>
 
