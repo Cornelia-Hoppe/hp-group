@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useContext, useEffect } from "react";
 import Modal from "./Modal";
 import SearchBar from "./SearchBar";
-import Nav from '../Navbar/Nav'
 import { ApiContext } from "./ApiProvider";
 import Filter from "./Filter";
 export default function Main() {
@@ -62,11 +61,7 @@ export default function Main() {
   }, [selectedFilter]);
 
   return (
-    <div>
-      <div className="header-hufflepuff">
-       <Nav /></div>
-      <SearchBar Search={setSearchTerm} />
-
+    <div className="main-hufflepuff" >
       <div className="filter-container">
         <Filter
           onChange={handleChange}
@@ -94,6 +89,9 @@ export default function Main() {
           opt2={"student"}
         />
       </div>
+
+      <SearchBar Search={setSearchTerm} />
+
       <div className="character-list">
         {filteredList
           .filter((characters) => {

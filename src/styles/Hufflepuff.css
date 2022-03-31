@@ -1,15 +1,29 @@
 
 .Hufflepuff {
-  display: flex; 
+background-image: url(../images/bgyellow.png);
+background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+.main-hufflepuff {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-background-image: url(../images/bgyellow.png);
 }
 .character-list {
   text-align: center;
+  min-height: 100vh;
 }
-
+.hufflepuff-logo {
+  display: flex; 
+  flex-direction: column;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+}
 .modal {
   position: fixed; 
   z-index: 1; 
@@ -63,8 +77,18 @@ select {
   max-width: 30ch;
   margin: 4px;
   background-color: #fff;
+  border: 1px solid black;
 }
 
 .filter-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+#search-hufflepuff {
+ padding: 5px;
+ margin: 20px;
+ width: 20vw;
+ border-radius: 10px;
 }

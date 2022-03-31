@@ -1,9 +1,9 @@
 import React from "react";
 import {
-  Hufflepuff,
-  Slytherin,
-  Gryffindor,
-  Ravenclaw,
+  HufflepuffLogo,
+  SlytherinLogo,
+  GryffindorLogo,
+  RavenclawLogo,
   HouseLogo,
 } from "../images/images";
 import { Link } from "react-router-dom";
@@ -21,7 +21,7 @@ export default function House() {
           <div className="house-row-h">
             <div className="single-house-h" id="gryffindor-h">
               <Link to="/gryffindor">
-                <img src={Gryffindor} />
+                <img src={GryffindorLogo} />
               </Link>
               <Link className="link-h" to="/gryffindor">
                 Gryffindor
@@ -29,7 +29,7 @@ export default function House() {
             </div>
             <div className="single-house-h" id="slytherin-h">
               <Link to="/slytherin">
-                <img src={Slytherin} />
+                <img src={SlytherinLogo} />
               </Link>
               <Link className="link-h" to="/slytherin">
                 Slytherin
@@ -39,7 +39,7 @@ export default function House() {
           <div className="house-row-h">
             <div className="single-house-h" id="ravenclaw-h">
               <Link to="/ravenclaw">
-                <img src={Ravenclaw} />
+                <img src={RavenclawLogo} />
               </Link>
               <Link className="link-h" to="/ravenclaw">
                 Ravenclaw
@@ -47,7 +47,7 @@ export default function House() {
             </div>
             <div className="single-house-h" id="hufflepuff-h">
               <Link to="/hufflepuff">
-                <img src={Hufflepuff} />
+                <img src={HufflepuffLogo} />
               </Link>
 
               <Link className="link-h" to="/hufflepuff">

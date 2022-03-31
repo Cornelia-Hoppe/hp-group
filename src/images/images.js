@@ -1,7 +1,7 @@
-export const Hufflepuff = require('./logos/hufflepuff.png');
-export const Gryffindor = require('./logos/gryffindor.png');
-export const Slytherin = require('./logos/slytherin.png');
-export const Ravenclaw = require('./logos/ravenclaw.png');
+export const HufflepuffLogo = require('./logos/hufflepuff.png');
+export const GryffindorLogo = require('./logos/gryffindor.png');
+export const SlytherinLogo = require('./logos/slytherin.png');
+export const RavenclawLogo = require('./logos/ravenclaw.png');
 export const HouseLogo = require('./logos/allHouses.png');
 
 export const Red = require("./backgrounds/bgRed.png");
