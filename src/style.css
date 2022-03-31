@@ -10,7 +10,9 @@ body {
   margin: 0 1rem;
   text-decoration: none;
 }
-
+.navbar a:hover{
+  text-decoration: underline;
+}
 .navbar{
   display: flex;
   align-items: center;

@@ -58,6 +58,7 @@
     border-bottom: white 1px solid;
     font-family: 'Cinzel', serif;
     margin-top: 1rem;
+    cursor:text;
 }
 .search--input::placeholder{
     color: var(--color-white);
