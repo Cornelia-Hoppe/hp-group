@@ -40,7 +40,6 @@ export default function Menu() {
         {menuItems.map((menu, index) => (
           <MenuItems item={menu} key={index} />   
         ))}
-
     </section>
   )
 }

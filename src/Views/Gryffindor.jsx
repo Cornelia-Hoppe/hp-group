@@ -76,8 +76,10 @@ export default function Gryffindor() {
           <Logo />
         </header>
         <main className='gryffindor-main'>
-          <Menu />
-          <Search />
+          <div>
+            <Menu />
+            <Search />
+          </div>
           <CharacterList />
           {openModal && <Modal />}
         </main>

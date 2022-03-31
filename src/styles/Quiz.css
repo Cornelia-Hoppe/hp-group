@@ -13,9 +13,7 @@
 .quiz-header,.quiz-main,.quizend,.quizstart{
   animation: fadein 5s;
 }
-.quiz-header{
-  margin-bottom: 2rem;
-}
+
 .quiz-main--content, .quiz-main--button{
   margin-top: 1rem;
 }
@@ -55,7 +53,7 @@
   margin-bottom: 2rem;
 }
 .answer-button {
-  margin: 1rem;
+  margin: 0.5rem;
   width: 200px;
   display: inline-block;
   position: relative;
@@ -75,6 +73,15 @@
   transform: scale(1.1);
   transition: 0.5s ease;
   background-color: #ffe593;
+}
+
+@media screen and (min-width:400px) {
+  .quiz-header{
+    margin-bottom: 2rem;
+  }
+  .answer-button{
+    margin: 1rem;
+  }
 }
 
 @keyframes fadein {
