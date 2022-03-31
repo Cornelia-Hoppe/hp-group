@@ -6,7 +6,12 @@ import Gryffindor from "./Views/Gryffindor"
 import Slytherin from "./Views/Slytherin"
 import Hufflepuff from "./Views/Hufflepuff"
 import Ravenclaw from "./Views/Ravenclaw"
+<<<<<<< HEAD
 import House from "./Views/House"
+=======
+import Quiz from "./Views/Quiz"
+
+>>>>>>> vivian
 
 export default function App() {
 
@@ -18,7 +23,11 @@ export default function App() {
             <Route path="/slytherin" element={<Slytherin />}/> 
             <Route path="/hufflepuff" element={<Hufflepuff />}/>
             <Route path="/ravenclaw" element={<Ravenclaw />}/>  
+<<<<<<< HEAD
             <Route path="/house" element={<House />}/>  
+=======
+            <Route path="/quiz" element={<Quiz />}/>
+>>>>>>> vivian
           </Routes>
         </Router>
     )
