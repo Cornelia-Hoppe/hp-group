@@ -11,11 +11,12 @@ export default function Header(props)
     //För att kunna ha ett onClick-event och även skicka med argument till våra funktioner, behöver vi en arrowfunktion i vårt onClick-event.
     //Input-elementet söker efter karaktärer.
     return(
-        <nav className="navbar">
-            <img className="houses-logo" src="houses-logo.png" alt="Harry Potter Houses Logotype" />
-
+        <header className="header">
+            <nav className="navbar">
+                <img className="houses-logo" src="houses-logo.png" alt="Harry Potter Houses Logotype" />
+            </nav>
             <Menu />
-        </nav>
+        </header>
     )
 }
 

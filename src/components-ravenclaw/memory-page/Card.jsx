@@ -1,44 +1,23 @@
 import React from 'react';
 import './Card.css';
 
-//Ta emot props från förälder komponenten Memory.
-//När funktionen clicked anropas ska det skapas en helt ny array som är kopierad med samma värde från vår memory-array.
-//I vår for-loop (läses till höger om tilldelningsoperatorn). För varje loopvarv, så vill jag hämta ut det kortet(objektet) som finns på den positionen.
-//När vi hittar som vi har tryckt på så uppdaterar vi det kortet i vår nya memory-array med det motsatta värdet i vår turned property.
-//Sist uppdaterar vi vår state-variabel för att rendera ut vårt nya värde. 
+//Vi skapar en Card-komponent och tar emot propsen från förälder-komponenten Memory.
 export default function Card(props)
 {
-    const clicked = () => 
-    {
-        const newMemory = [...props.memory]
+    //Här destruktar vi alla våra props och sparar ner det för att slippa skriva props i början av användandet.
+    const {card, cardClicked} = props;
 
-        for(let i = 0; i < props.memory.length; i++)
-        {
-            const memoryCard = props.memory[i];
-            if(memoryCard.id === props.id)
-            {
-                newMemory[i].turned = !props.turned;
-            }
-        }
-
-        props.updateMemory(newMemory)
-    };
-
-    /*
-    if(props.turned)
-    {
-        <img src={props.image}>
-    }
-    else
-    {
-        <img src="./cardBackside.jpg">
-    }
-    */
     return(
         <section className="card">
-            <div onClick={clicked}>
+            {
+                /*För att kunna skicka med vårt id till koret som ett argument till vår onClick-funktion 
+                behöver vi göra det via en arrow-function. */
+            }
+            <div onClick={ () => cardClicked(card.id)}>
                 {
-                    props.turned ? <img src={props.image} /> : <img src="./cardBackside.jpg" />
+                    /* Här använder vi en ternary-operator som ska rendera ut fram eller baksida beroende på om -
+                    turned är sant eller falskt. */ 
+                    card.turned ? <img src={card.image} /> : <img src="./cardBackside.jpg" />
                 }
             </div>
         </section>

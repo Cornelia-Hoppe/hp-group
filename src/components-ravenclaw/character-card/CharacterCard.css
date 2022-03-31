@@ -1,10 +1,13 @@
 .character-card{
-    width:150px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     text-align: center;
+}
+
+.character-card p{
     background-color: blue;
-    margin-left: 50px;
-    margin-top: 20px;
+    width: 150px;
+    height: 150px;
 }
 
 /* Modal styling  */
@@ -22,4 +25,6 @@
     width: 50%;
     height: 50%;
 }
+
+
 
