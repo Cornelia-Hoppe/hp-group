@@ -20,11 +20,8 @@ export default function App() {
             <Route path="/slytherin" element={<Slytherin />}/> 
             <Route path="/hufflepuff" element={<Hufflepuff />}/>
             <Route path="/ravenclaw" element={<Ravenclaw />}/>  
-<<<<<<< HEAD
             <Route path="/house" element={<House />}/>  
-=======
             <Route path="/quiz" element={<Quiz />}/>
->>>>>>> vivian
           </Routes>
         </Router>
     )
