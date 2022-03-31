@@ -8,7 +8,7 @@ import Hufflepuff from "./Views/Hufflepuff"
 import Ravenclaw from "./Views/Ravenclaw"
 import House from "./Views/House"
 import Quiz from "./Views/Quiz"
-
+import SortingHat from "./Views/SortingHat"
 
 export default function App() {
 
@@ -22,6 +22,7 @@ export default function App() {
             <Route path="/ravenclaw" element={<Ravenclaw />}/>  
             <Route path="/house" element={<House />}/>  
             <Route path="/quiz" element={<Quiz />}/>
+            <Route path="/sortinghat" element={<SortingHat />}/>
           </Routes>
         </Router>
     )

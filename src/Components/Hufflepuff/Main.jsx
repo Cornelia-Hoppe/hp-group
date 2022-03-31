@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useContext, useEffect } from "react";
 import Modal from "./Modal";
 import SearchBar from "./SearchBar";
+import Nav from '../Nav'
 import { ApiContext } from "./ApiProvider";
 import Filter from "./Filter";
 export default function Main() {
@@ -62,6 +63,8 @@ export default function Main() {
 
   return (
     <div>
+      <div className="header-hufflepuff">
+       <Nav /></div>
       <SearchBar Search={setSearchTerm} />
 
       <div className="filter-container">

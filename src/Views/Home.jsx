@@ -9,6 +9,7 @@ export default function Home() {
       <Link to='hufflepuff'>Hufflepuff</Link>
       <Link to='ravenclaw'>Ravenclaw</Link>
       <Link to='house'>Houses</Link>
+      <Link to='sortinghat'>Hat</Link>
     </section>
   )
 }
