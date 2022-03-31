@@ -1,0 +1,85 @@
+
+.NavBar a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+  .NavBar a:hover {
+    text-decoration: underline;
+  }
+  .NavBar li {
+    list-style: none;
+    margin: 0 1rem;
+  }
+  .active {
+    font-size: larger;
+    font-weight: bolder;
+    
+  }
+  .NavBar .Navigation  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.NavBar .Navigation ul {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.NavBar .MobileNavigation {
+display: none;
+}
+
+.NavBar .MobileNavigation li {
+    flex-direction: column;
+    left: 0;
+    padding: 10px;
+
+}
+.NavBar .MobileNavigation ul {
+margin-top: 10vh;
+height: 200vh;
+min-width: 100vw;
+background-color: black;
+
+}
+.NavBar .MobileNavigation .Hamburger {
+    position: fixed;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+@media (max-width: 800px) {
+.NavBar .Navigation {
+    display: none;
+}
+.NavBar .MobileNavigation {
+    display: flex;
+    position: fixed;
+    left: 0;    
+
+}
+
+}
+
+
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}

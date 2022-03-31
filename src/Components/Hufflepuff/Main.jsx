@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useContext, useEffect } from "react";
 import Modal from "./Modal";
 import SearchBar from "./SearchBar";
-import Nav from '../Nav'
+import Nav from '../Navbar/Nav'
 import { ApiContext } from "./ApiProvider";
 import Filter from "./Filter";
 export default function Main() {

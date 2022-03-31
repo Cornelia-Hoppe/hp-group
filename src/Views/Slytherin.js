@@ -4,7 +4,7 @@ import {NavItem, NavbarSlytherin} from "../Components/Slytherin/Navbar"
 import Modal from '../Components/Slytherin/Modal';
 import "../styles/Slytherin.css"
 import "../style.css"
-import Navbar from "../Components/Nav"
+import Navbar from "../Components/Navbar/Nav"
 import logoSlytherin from '../images/slytherin-logo.png'
 import Quote from '../Components/Quotes';
 

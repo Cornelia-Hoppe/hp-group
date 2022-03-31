@@ -1,14 +1,10 @@
 
 .Hufflepuff {
- 
   display: flex; 
   align-items: center;
   justify-content: center;
   flex-direction: column;
 background-image: url(../images/bgyellow.png);
-}
-.header-hufflepuff img {
-width: 10vw;
 }
 .character-list {
   text-align: center;
