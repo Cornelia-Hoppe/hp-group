@@ -11,14 +11,19 @@ export default function Quiz() {
   const [gameState, setGameState] = useState('start')
   const [score, setScore] = useState(0)
   const [currentQuestion, setCurrentQuestion] = useState(0)
+  const [selected, setSelected] = useState(false)
 
   return (
-    <QuizContext.Provider value={{Questions, gameState, setGameState, score, setScore, currentQuestion, setCurrentQuestion}} >
+    <QuizContext.Provider value={{Questions, gameState, setGameState, score, setScore, currentQuestion, setCurrentQuestion,selected, setSelected}} >
       <section className='quiz-body'>
-        <h1>Hogwarts quiz</h1>
-          {gameState === 'start' && <StartQuiz />}
-          {gameState === 'quiz' && <QuizGame />}
-          {gameState === 'end' && <EndQuiz />}
+        <header className='quiz-header'>
+          <h1>Hogwarts quiz</h1>
+        </header>
+          <main className='quiz-main'>
+            {gameState === 'start' && <StartQuiz />}
+            {gameState === 'quiz' && <QuizGame />}
+            {gameState === 'end' && <EndQuiz />}
+          </main>
       </section>
     </QuizContext.Provider>
   )
