@@ -27,6 +27,9 @@ body {
 .styleQuote {
  text-align: center;
  padding: 20px;
+ font-family: 'Charm', cursive;
+ font-size: 22px;
+ font-weight: 200px;
 }
 /* styling for choosing house  */
 

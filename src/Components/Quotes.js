@@ -15,7 +15,7 @@ export default function Quote() {
     
     return (
         <>
-        <p className='styleQuote'>{QuotesData[activeQuote].quote}</p>
+        <p className='styleQuote' key={QuotesData.id}>{QuotesData[activeQuote].quote}</p>
       </>
     )
 }

@@ -13,6 +13,7 @@ export function WizardCard(props,index) {
      {props.image}
      {props.dateOfBirth}
       {props.actor}
+      {props.gender}
     </div>
   )
 }

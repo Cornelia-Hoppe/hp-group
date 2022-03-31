@@ -6,7 +6,7 @@ import Gryffindor from "./Views/Gryffindor"
 import Slytherin from "./Views/Slytherin"
 import Hufflepuff from "./Views/Hufflepuff"
 import Ravenclaw from "./Views/Ravenclaw"
-import House from './Views/House'
+import House from "./Views/House"
 
 export default function App() {
 

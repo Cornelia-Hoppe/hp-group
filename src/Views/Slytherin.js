@@ -78,12 +78,12 @@ const [clickedIndex, setClickedIndex] = useState(0);
 const [searchTerm, setSerchTerm] = useState('');
 
 return (
-  <>
+  <div className='slytherin-body'>
   <header className='slytherin-header'>
   <Navbar />
   <img src={logoSlytherin} alt="Slytherin" />
+  <h1>Slytherin House</h1>
   <NavbarSlytherin>
-  <input type="text" placeholder='Search...' onChange={event =>{setSerchTerm(event.target.value)}} />
   <NavItem icon= "Species" >
     < DropdownMenuSpecies />
       </NavItem>
@@ -97,6 +97,7 @@ return (
      < DropdownMenuGender />
     </NavItem>
   </NavbarSlytherin>
+  <input className='slytherin-input' type="text" placeholder='Search...' onChange={event =>{setSerchTerm(event.target.value)}} />
   </header>
  
   
@@ -113,15 +114,18 @@ return (
                         : wizards[clickedIndex].hogwartsStaff 
                         ? (<p>Staff</p>) : (<p></p>)
                     }
-     <p>Name:</p><WizardCard data={wizards[clickedIndex].name} />
-     <p>Actor:</p><WizardCard actor={wizards[clickedIndex].actor}/>
-     <p>Patronus:</p><WizardCard patronus={wizards[clickedIndex].patronus}/>
+  <div className='modal-row'>  <p>Name:</p><WizardCard data={wizards[clickedIndex].name} /> </div>
+  <div className='modal-row'>  <p>Gender:</p><WizardCard gender={wizards[clickedIndex].gender}/> </div>
+  <div className='modal-row'>  <p>Actor:</p><WizardCard actor={wizards[clickedIndex].actor}/> </div>
+  <div className='modal-row'>  <p>Patronus:</p><WizardCard patronus={wizards[clickedIndex].patronus}/> </div>
+  <div className='modal-row'>  <p>Born:</p><WizardCard age={wizards[clickedIndex].dateOfBirth}/> </div>
+  
         </div>
     }
  })}
 
   </Modal>
-
+<div className='slytherin-cards'>
   {active === "FirstCard" && 
   <card className='alWizardDisp , SlytherinDisp'>
     {wizards.filter((data)=>{
@@ -261,8 +265,10 @@ return (
     }
  })}
   </card> }
+  </div>
   <Quote/>
-  </>
+  
+  </div>
   
 );
     }

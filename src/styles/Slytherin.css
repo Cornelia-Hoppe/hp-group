@@ -1,15 +1,55 @@
 
-  
+.slytherin-body{
+    background-image: url(../images/bgGreen.png);
+    font-family: 'Cinzel', serif;
+}
 
+.slytherin-body h1{
+    font-size: 22px;
+    margin: 10px;
+    font-weight: 400;
+}
 
+.slytherin-input{
+    font-family: 'Cinzel', serif;
+    margin: 5px;
+    font-size: 20px;
+    margin-right: 30px;
+    margin-top: 5px;
+    background-color: lightgray;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+}
   
-  button{
+ .dropdown-slytherin button{
     color: white;
-    background: none;
+    background-color: #155715;
+    border: solid white 2px;
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Cinzel', serif;
+  }
+
+  .slytherin-cards button{
+    color: white;
+    background:none;
     font-size: 20px;
     border: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Cinzel', serif;
+    transition: 600ms;
+  }
+
+  .slytherin-cards button:hover{
+    font-size: 22px;
   }
   
+ 
   
   .navbar-slytherin {
     background:none;
@@ -23,8 +63,7 @@
   }
   
   .navbar-nav-slytherin {
-    max-width: 80%;
-    height: 80%;
+  
     display: flex;
     justify-content: flex-end;
     padding-top: 4px;
@@ -48,13 +87,17 @@
   
   .icon-slytherin {
     background-color: #155715;
+    color: white;
     border-radius: 5px;
-    border-style: none;
+    border-style: solid black 4px;
     padding: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: filter 300ms;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    font-weight: 500;
   }
   
   .icon-slytherin:hover {
@@ -73,30 +116,21 @@
     text-align: center;
 }
 .slytherin-header img{
-    width: 100px;
+    width: 120px;
     margin: 1rem 0;
 }
   .dropdown-slytherin {
     position: absolute;
-    top : 300px;
-    right: 400px;
+    top : 120px;
     transform: translateX(-45%);
     border-radius: 5px;
     padding: 10px;
     overflow: hidden;
-    border: 3px solid #155715;
-    background-color: #000;
+    border: 3px solid #fff;
+    background-color: #155715;
     
   }
  
-  .navbar-slytherin input {
-    margin-right: 30px;
-    margin-top: 5px;
-    background-color: lightgray;
-    border-radius: 5px;
-    height: 20px;
-    width: 100px;
-  }
 
   .modal-slytherin {
     font-size:20px;
@@ -105,6 +139,16 @@
     align-items: center;
   }
   .modal-slytherin img{
-    width:90px ;
+    width:200px ;
+    padding: 10px;
+  }
+  
+  .modal-row {
+      display: flex;
+      font-weight: 500;
+  }
+
+  .modal-row p{
+      font-size: 18px;
   }
   
