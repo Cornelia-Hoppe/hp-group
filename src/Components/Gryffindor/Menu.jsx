@@ -37,7 +37,6 @@ export default function Menu() {
 
   return (
     <section className='menu'>
-      <h3>Filter here:</h3>
         {menuItems.map((menu, index) => (
           <MenuItems item={menu} key={index} />   
         ))}

@@ -1,0 +1,42 @@
+ [
+            {
+                "id":1,
+                "quote": "Do not pity the dead, Harry. Pity the living, and, above all those who live without love -Albus Dumbledore"
+            },
+            {
+                "id": 2,
+                "quote": "It is impossible to manufacture or imitate love - Horace Slughorn"
+            },
+            {
+                "id": 3,
+                "quote": "It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends. -Albus Dumbledore"
+            },
+            {
+                "id": 4,
+                "quote": "If you want to know what a man’s like, take a good look at how he treats his inferiors, not his equals. -Sirius Black"
+            },
+            {
+                "id": 5,
+                "quote": "It does not do to dwell on dreams and forget to live -Albus Dumbledore"
+            },
+            {
+                "id": 6,
+                "quote": "It matters not what someone is born, but what they grow to be -Albus Dumbledore"
+            },
+            {
+                "id": 7,
+                "quote": "When in doubt, go to the library -Ron Weasley"
+            },
+            {
+                "id": 8,
+                "quote": "There is things more importan than keepin a job -Rubeus Hagrid"
+            },
+            {
+                "id": 9,
+                "quote": "The ones that love us never really leave us. You can always find them in here -Sirius Black"
+            },
+            {
+                "id": 10,
+                "quote": "Soon we must all face the choice between what is right and what is easy -Albus Dumbledore"
+            }
+]
