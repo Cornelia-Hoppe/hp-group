@@ -61,7 +61,7 @@ export default function Main() {
   }, [selectedFilter]);
 
   return (
-    <div className="App">
+    <div>
       <SearchBar Search={setSearchTerm} />
 
       <div className="filter-container">

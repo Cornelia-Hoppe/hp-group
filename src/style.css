@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: 'Cinzel', serif;
   font-size: 20px;
+  color: white;
 }
 
 .navbar a{
@@ -85,7 +86,7 @@ body {
 }
 
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 400px) {
 .house-images-h {
     height: 70vh;
     width: 60%;

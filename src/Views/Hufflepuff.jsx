@@ -7,7 +7,9 @@ function Hufflepuff() {
   return (
 <ApiProvider>
     <div className="Hufflepuff">
+      <div className="header-hufflepuff">
     <Nav />
+    </div>
       <Main />
     </div>   
     </ApiProvider>
