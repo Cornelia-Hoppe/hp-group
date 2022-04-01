@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { RavenclawContext } from "../../components-ravenclaw/ravenclaw-page/RavenclawPage";
+import { RavenclawContext } from "../../../Views/Ravenclaw";
 
 import './MenuItems.css';
 

@@ -1,15 +1,7 @@
 import React, {useState, useEffect, createContext} from "react";
-<<<<<<< HEAD:src/Views/Ravenclaw.jsx
 import "../styles/Ravenclaw.css"
 import CharacterCard from "../Components/Ravenclaw/character-card/CharacterCard";
 import Header from "../Components/Ravenclaw/header/Header";
-
-export const RavenclawContext = createContext();
-=======
-import "./RavenclawPage.css"
-import CharacterCard from "../character-card/CharacterCard";
-import Header from "../header/Header";
->>>>>>> emma:src/components-ravenclaw/ravenclaw-page/RavenclawPage.jsx
 
 export const RavenclawContext = createContext();
 

@@ -1,5 +1,6 @@
 .slytherin-body{
     background-image: url(../images/bgGreen.png);
+    background-size: cover;
     font-family: 'Cinzel', serif;
 }
 

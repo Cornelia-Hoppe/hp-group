@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import MenuItems from './MenuItems'
 
 import './Menu.css';
-import { RavenclawContext } from "../../components-ravenclaw/ravenclaw-page/RavenclawPage";
+import { RavenclawContext } from "../../../Views/Ravenclaw";
 
 export default function Menu() {
 
