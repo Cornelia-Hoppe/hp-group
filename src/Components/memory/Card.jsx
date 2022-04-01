@@ -1,6 +1,6 @@
 import React from 'react';
 import './Card.css';
-import {CardBackside} from "../../../images/images"
+import {CardBackside} from "../../images/images"
 
 
 //Vi skapar en Card-komponent och tar emot propsen från förälder-komponenten Memory.

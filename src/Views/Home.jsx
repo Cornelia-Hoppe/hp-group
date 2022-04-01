@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <div className='home-body'>
       <section className='home-buttons'>
-        <HomeNav/>
       <img src={HouseLogo} alt="Houses" />
         <button> <Link className='link-a' to='house'>Houses</Link></button>
         <button> <Link className='link-a' to='quiz'>Quiz</Link></button>
