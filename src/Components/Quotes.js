@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react'
 import QuotesData from '../assets/quotesData.json'
+import DeathlyHallows from '../images/deathly-hallows.png'
 
 
 export default function Quote() {
@@ -14,8 +15,9 @@ export default function Quote() {
 
     
     return (
-        <>
+        <div className='quote-footer'>
+        <img src={DeathlyHallows} alt="Deathly Hallows"/>
         <p className='styleQuote' key={QuotesData.id}>{QuotesData[activeQuote].quote}</p>
-      </>
+      </div>
     )
 }

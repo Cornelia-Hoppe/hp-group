@@ -34,6 +34,16 @@ body {
   font-size: 22px;
   font-weight: 200px;
 }
+.quote-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadein 8s;
+}
+
+.quote-footer img{
+  width: 80px;
+}
 /* styling for choosing house  */
 
 .house-container-h {
@@ -155,3 +165,78 @@ body {
 }
 
 /*  */
+/*Styling for home  */
+
+.home-body button{
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  text-align: center;
+  border: none;
+  clip-path: polygon(7% 0, 93% 0, 100% 50%, 93% 100%, 7% 100%, 0 50%);
+  background-color: rgb(49, 49, 49);
+  background-image: radial-gradient(250% 70% at center 20%, rgb(48, 48, 48) -30%, rgb(54, 54, 54) 49%, rgb(48, 48, 48) 50%, rgb(49, 49, 49) 150%);
+  background-repeat: no-repeat;
+  transition: background-position-y ease-in-out 250ms;
+  width: 200px;
+  margin: 20px;
+ }
+ 
+ .home-body button:hover {
+  background-position-y: -50px;
+ }
+ 
+ .home-body button:active {
+  transform: scale(0.99);
+ }
+.home-body{
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(./images/bgHog.jpg);
+  background-size: cover;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+.home-buttons{
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Cinzel', serif ;
+  font-size: 20px;
+}
+
+.home-buttons img{
+  width: 150px;
+}
+
+/* Home-nav styling*/
+
+.home-nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-nav img{
+  width: 80px;
+}
+.link-b{
+  text-decoration: none;
+  color: white;
+  font-family: 'Cinzel', serif ;
+  font-size: 20px;
+  transition: 300ms;
+}
+.link-b:hover{
+  font-size: 24px;
+}
