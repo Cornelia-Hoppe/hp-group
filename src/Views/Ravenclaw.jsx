@@ -1,7 +1,9 @@
 import React, {useState, useEffect, createContext} from "react";
 import "../styles/Ravenclaw.css"
 import CharacterCard from "../Components/Ravenclaw/character-card/CharacterCard";
-import Header from "../Components/Ravenclaw/header/Header";
+import Nav from '../Components/Navbar/Nav';
+import Quotes from '../Components/Quotes'
+import Header from '../Components/Ravenclaw/header/Header';
 
 export const RavenclawContext = createContext();
 
@@ -35,12 +37,18 @@ export default function RavenclawPage()
     return(
         <RavenclawContext.Provider value={{characterList, setFilteredCharacterList}}>
             <div className="Ravenclaw-Page">
-                <Header />
+                <header className='gryffindor-header'>
+                    <Nav />
+                </header>
                 <div className="main-container">
+                    <Header />
                 {
                 filteredCharacterList.map(character => <CharacterCard name={character.name} image={character.image} hogwartsStaff={character.hogwartsStaff} hogwartsStudent={character.hogwartsStudent} gender={character.gender} ancestry={character.ancestry} species={character.species} />)
                 }
                 </div>
+                <footer>
+                    <Quotes />
+                </footer>
             </div>
         </RavenclawContext.Provider>
     )

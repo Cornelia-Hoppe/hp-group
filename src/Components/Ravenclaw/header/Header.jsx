@@ -10,9 +10,6 @@ export default function Header(props)
     //Input-elementet söker efter karaktärer.
     return(
         <header className="header">
-            <nav className="navbar">
-                <img className="houses-logo" src="houses-logo.png" alt="Harry Potter Houses Logotype" />
-            </nav>
             <Menu />
         </header>
     )
