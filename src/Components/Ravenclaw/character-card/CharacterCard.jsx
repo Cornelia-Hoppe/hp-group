@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./CharacterCard.css";
 
 export default function CharacterCard(props)
 {

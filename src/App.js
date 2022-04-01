@@ -9,6 +9,7 @@ import Ravenclaw from "./Views/Ravenclaw"
 import House from "./Views/House"
 import Quiz from "./Views/Quiz"
 import SortingHat from "./Views/SortingHat"
+import Memory from "./Views/Memory"
 
 export default function App() {
 
@@ -23,6 +24,7 @@ export default function App() {
             <Route path="/house" element={<House />}/>  
             <Route path="/quiz" element={<Quiz />}/>
             <Route path="/sortinghat" element={<SortingHat />}/>
+            <Route path="/memory" element={<Memory />}/>
           </Routes>
         </Router>
     )
