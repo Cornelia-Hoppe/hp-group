@@ -1,8 +1,8 @@
 import React from 'react';
 //När man importerar memoryArray behövs måsvingar runt för att den inte exporteras med default.
-import { memoryArray } from '../../assets/memory.js';
-import Card from './Card.jsx';
-import "./Memory.css"
+import { memoryArray } from '../assets/memory.js';
+import Card from '../Components/memory/Card.jsx';
+import "../Components/memory/Memory.css"
 
 /* Vi vill att vår memory-komponent ska framställas på nytt. Därför behöver vi en state-variabel 
 inuti vår komponent för att kunna observera ändringar i vår memory-state variabel.*/
