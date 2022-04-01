@@ -10,7 +10,7 @@
   color: rgb(190, 167, 33);
   padding: 0 1rem;
 }
-.quiz-header,.quiz-main,.quizend,.quizstart{
+.quiz-header,.quiz-main,.quizend,.quizstart, .quiz-body > .home-nav-body{
   animation: fadein 5s;
 }
 

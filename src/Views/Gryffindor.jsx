@@ -6,6 +6,7 @@ import Modal from '../Components/Gryffindor/Modal'
 import Search from '../Components/Gryffindor/Search'
 import Nav from '../Components/Navbar/Nav'
 import "../styles/Gryffindor.css"
+import Quotes from '../Components/Quotes'
 
 export const GlobalContext = createContext()
 export default function Gryffindor() {
@@ -83,6 +84,9 @@ export default function Gryffindor() {
           <CharacterList />
           {openModal && <Modal />}
         </main>
+        <footer>
+          <Quotes />
+        </footer>
       </section>  
     </GlobalContext.Provider>
   )
