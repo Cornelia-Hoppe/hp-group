@@ -1,7 +1,7 @@
-export const memoryCards = [
+export const memoryArray = [
     {
         id: 1,
-        image: "./houses-logo.png",
+        image: "./bgBlue.png",
         turned: false,
     },
     

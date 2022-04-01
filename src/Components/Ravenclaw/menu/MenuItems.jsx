@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { RavenclawContext } from "../../../Views/Ravenclaw";
+import { RavenclawContext } from "../../components-ravenclaw/ravenclaw-page/RavenclawPage";
 
 import './MenuItems.css';
 
@@ -105,4 +105,3 @@ const clickedMenu = (menuTitle) => {
             </div>
        )
 }
-
