@@ -4,6 +4,7 @@ import StartQuiz from '../Components/Quiz/StartQuiz';
 import QuizGame from '../Components/Quiz/QuizGame';
 import EndQuiz from '../Components/Quiz/EndQuiz';
 import {Questions} from "../assets/Questions"
+import HomeNav from '../assets/HomeNav';
 
 export const QuizContext = createContext()
 export default function Quiz() {
@@ -16,6 +17,7 @@ export default function Quiz() {
   return (
     <QuizContext.Provider value={{Questions, gameState, setGameState, score, setScore, currentQuestion, setCurrentQuestion,selected, setSelected}} >
       <section className='quiz-body'>
+      <HomeNav />
         <header className='quiz-header'>
           <h1>Hogwarts quiz</h1>
         </header>

@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react'
 import QuotesData from '../assets/quotesData.json'
-import DeathlyHallows from '../images/deathly-hallows.png'
+import {DeathlyHallows} from '../images/images'
 
 
 export default function Quote() {

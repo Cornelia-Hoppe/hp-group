@@ -1,10 +1,10 @@
 import React from 'react'
-import logoGryffindor from '../../images/gryffindor-logo.png'
+import {GryffindorLogo} from "../../images/images"
 
 export default function Logo() {
   return (
     <section className='gryffindor-header--logo'>
-        <img src={logoGryffindor} alt="Gryffindor" />
+        <img src={GryffindorLogo} alt="Gryffindor" />
         <h1>Gryffindor House</h1>
     </section>
   )

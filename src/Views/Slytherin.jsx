@@ -5,7 +5,7 @@ import Modal from '../Components/Slytherin/Modal';
 import "../styles/Slytherin.css"
 import "../style.css"
 import Navbar from "../Components/Navbar/Nav"
-import logoSlytherin from '../images/slytherin-logo.png'
+import {SlytherinLogo} from '../images/images'
 import Quote from '../Components/Quotes';
 
 
@@ -81,7 +81,7 @@ return (
   <div className='slytherin-body'>
   <header className='slytherin-header'>
   <Navbar />
-  <img src={logoSlytherin} alt="Slytherin" />
+  <img src={SlytherinLogo} alt="Slytherin" />
   <h1>Slytherin House</h1>
   <NavbarSlytherin>
   <NavItem icon= "Species" >
