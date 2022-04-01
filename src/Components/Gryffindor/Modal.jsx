@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../../Views/Gryffindor";
-import logo from '../../images/gryffindor-logo.png'
+import {GryffindorLogo} from '../../images/images'
 
 export default function Modal() {
 
@@ -15,7 +15,7 @@ export default function Modal() {
                 <h2>{listData[indexModal].name}</h2>
                 {listData[indexModal].image 
                     ? (<img src={listData[indexModal].image} alt={listData[indexModal].name} className='modal--image'/>) 
-                    : (<img src={logo} alt={listData[indexModal].name} className='modal--image'/>)
+                    : (<img src={GryffindorLogo} alt={listData[indexModal].name} className='modal--image'/>)
                 }
                 <div className="modal--info">
                     {listData[indexModal].hogwartsStudent 

@@ -4,7 +4,7 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  background: url(../images/bgPurple.png) no-repeat;
+  background: url(../images/backgrounds/bgPurple.png) no-repeat;
   background-size: cover;
   min-height: 100vh;
   color: rgb(190, 167, 33);
