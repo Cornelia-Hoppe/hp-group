@@ -1,6 +1,7 @@
 .menu{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     margin: 1rem 0;
 }
 
@@ -8,11 +9,13 @@
 .menu-item{
 
 }
-
-.searchbar{
-
-}
 */
+
+.menuBar{
+    display: flex;
+    margin-top: 20px;
+}
+
 
 /* Media Query */
 @media screen and (max-width: 428px) {

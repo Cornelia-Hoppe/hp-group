@@ -51,11 +51,14 @@ export default function Menu() {
 
   return (
     <section className='menu'>
+      <div>
+      <input className="searchbar" type="text" placeholder="Search for character" onInput={ (event) => filterByInput(event.target.value) } />
+      </div>
+      <div className="menuBar">
         {
             menuItems.map((menu, index) => <MenuItems item={menu} key={index} />)
         }
-
-        <input className="searchbar" type="text" placeholder="Search for character" onInput={ (event) => filterByInput(event.target.value) } />
+      </div>
     </section>
   )
 }
