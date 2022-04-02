@@ -42,6 +42,8 @@ margin-top: 10vh;
 height: 200vh;
 min-width: 100vw;
 background-color: black;
+animation: 2s slide-right;
+width: 100%;
 
 }
 .NavBar .MobileNavigation .Hamburger {
@@ -65,21 +67,27 @@ background-color: black;
 
 
 
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 
-@-webkit-keyframes slide {
-    100% { left: 0; }
+/***** Slide Left *****/
+
+
+.fade-in {
+  animation: fadeIn ease 3s;
+}
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }
 
-@keyframes slide {
-    100% { left: 0; }
-}

@@ -60,9 +60,14 @@ export default function Main() {
     setFilteredList(filteredData);
   }, [selectedFilter]);
 
+  function handleBtns() {
+    setFilteredList(characters);
+  }
+
   return (
-    <div className="main-hufflepuff" >
+    <div className="main-hufflepuff">
       <div className="filter-container">
+        <button onClick={handleBtns}>all</button>
         <Filter
           onChange={handleChange}
           title={"Gender"}
