@@ -9,8 +9,9 @@ function Hufflepuff() {
   return (
     <ApiProvider>
       <div className="Hufflepuff">
+        <div className="nav-hufflepuff">
         <Nav />
-        <div className="hufflepuff-logo">
+        <div className="hufflepuff-logo"></div>
           <img src={HufflepuffLogo} width="100px"></img>
           <h3>Hufflepuff house</h3>
         </div>

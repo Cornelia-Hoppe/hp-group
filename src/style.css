@@ -6,27 +6,6 @@ body {
   color: white;
 }
 
-.navbar a {
-  color: white;
-  margin: 0 1rem;
-  text-decoration: none;
-}
-.navbar a:hover {
-  text-decoration: underline;
-}
-.navbar {
-  display: flex;
-  align-items: center;
-}
-.navbar li {
-  list-style: none;
-  margin: 0 1rem;
-}
-.active {
-  font-size: larger;
-  font-weight: bolder;
-}
-
 .styleQuote {
   text-align: center;
   padding: 20px;
@@ -44,6 +23,12 @@ body {
 .quote-footer img{
   width: 80px;
 }
+
+.active {
+  font-size: larger;
+  font-weight: bolder;
+}
+
 /* styling for choosing house  */
 
 .house-container-h {
@@ -60,7 +45,7 @@ body {
 }
 
 .house-images-h {
-  width: 90%;
+  width: 100%;
   flex-direction: column;
 }
 .link-h {

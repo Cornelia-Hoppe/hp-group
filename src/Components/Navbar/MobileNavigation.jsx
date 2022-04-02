@@ -14,8 +14,9 @@ const MobileNavigation = () => {
     
   return (
     <nav className={classes.MobileNavigation}>
+      
+     
       {open ? closeIcon : hamburgerIcon}
-
 
   { open && <NavLink />}
    </nav>
