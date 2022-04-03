@@ -43,7 +43,16 @@ export default function RavenclawPage()
                 <div className="main-container">
                     <Header />
                 {
-                filteredCharacterList.map(character => <CharacterCard name={character.name} image={character.image} hogwartsStaff={character.hogwartsStaff} hogwartsStudent={character.hogwartsStudent} gender={character.gender} ancestry={character.ancestry} species={character.species} />)
+                filteredCharacterList.map(character => <CharacterCard 
+                    name={character.name} 
+                    image={character.image} 
+                    hogwartsStaff={character.hogwartsStaff} 
+                    hogwartsStudent={character.hogwartsStudent} 
+                    gender={character.gender} 
+                    ancestry={character.ancestry} 
+                    species={character.species} 
+                    patronous={character.patronous}
+                    actor={character.actor}/>)
                 }
                 </div>
                 <footer>
