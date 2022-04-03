@@ -115,7 +115,6 @@ export default function Main() {
                 name={characters.name}
                 ancestry={characters.ancestry}
                 gender={characters.gender}
-                yearOfBirth={characters.yearOfBirth}
                 house={characters.house}
                 patronus={characters.patronus}
                 actor={characters.actor}
