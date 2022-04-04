@@ -197,9 +197,9 @@ body {
 .home-body{
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(./images/backgrounds/bgHog.jpg);
-  background-size: cover;
-  height: 100%;
-  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  min-height: 100vh;
 }
 .home-buttons{
   padding-top: 5%;

@@ -115,17 +115,22 @@ return (
    if (index === clickedIndex) {
      return <div className='modal-slytherin'>
   <div className='modal-row'> <h1><WizardCard data={wizards[clickedIndex].name} /></h1> </div>
-       <img src={wizards[clickedIndex].image} alt='caracter'/>
-       {wizards[clickedIndex].hogwartsStudent 
+
+  {wizards[clickedIndex].image 
+                    ? (<img src={wizards[clickedIndex].image} alt='caracter'/>) 
+                    : (<img src={SlytherinLogo} alt='caracter'/>)
+                }
+
+  {wizards[clickedIndex].hogwartsStudent 
                         ? (<p>Student</p>) 
                         : wizards[clickedIndex].hogwartsStaff 
                         ? (<p>Staff</p>) : (<p></p>)
                     }
     <div className='modal-row'>  <p>Gender:&nbsp;</p><WizardCard gender={wizards[clickedIndex].gender}/> </div>
-    <div className='modal-row'>  <p>Actor:&nbsp; </p><WizardCard actor={wizards[clickedIndex].actor}/> </div>
-    <div className='modal-row'>  <p>Patronus:&nbsp; </p><WizardCard patronus={wizards[clickedIndex].patronus}/> </div>
-    <div className='modal-row'>  <p>Ancestery:&nbsp; </p><WizardCard ancestry={wizards[clickedIndex].ancestry}/> </div>
-
+    <div className='modal-row'>  <p>Actor:&nbsp; </p><WizardCard actor={wizards[clickedIndex].actor ? wizards[clickedIndex].actor : 'N/A'}/> </div>
+    <div className='modal-row'>  <p>Patronus:&nbsp; </p><WizardCard patronus={wizards[clickedIndex].patronus ? wizards[clickedIndex].patronus : 'N/A'}/> </div>
+    <div className='modal-row'>  <p>Ancestery:&nbsp; </p><WizardCard ancestry={wizards[clickedIndex].ancestry ? wizards[clickedIndex].ancestry : 'N/A'}/> </div>
+  
   </div>
     }
     return (<div />)
