@@ -71,7 +71,7 @@ export default function Gryffindor() {
     }
   
   return (
-    <GlobalContext.Provider value={{getListData,listData, searchTerm, setSearchTerm, openModal, setOpenModal, indexModal, setIndexModal, chosenMenu, setChosenMenu}}>
+    <GlobalContext.Provider value={{listData, searchTerm, setSearchTerm, openModal, setOpenModal, indexModal, setIndexModal, chosenMenu, setChosenMenu}}>
       <section className='gryffindor-body'>
         <header className='gryffindor-header'>
           <Nav />
