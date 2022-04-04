@@ -14,11 +14,9 @@
     align-items: center;
 }
 
-/* Media Query*/
-@media screen and (min-width: 800px) {
-    .main-container{
-        grid-template-columns: auto auto auto auto;
-    }
-}    
+p:hover{
+        cursor: pointer;
+}
+  
 
 

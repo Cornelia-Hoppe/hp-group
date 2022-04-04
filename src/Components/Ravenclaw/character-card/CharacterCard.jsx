@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { RavenclawLogo } from "../../../images/images";
+import "./CharacterCard"
 
 export default function CharacterCard(props)
 {
@@ -16,7 +17,10 @@ export default function CharacterCard(props)
             <div className="modal">
               <div className="modal-content">
                 <button onClick={() => setModalOpen(false)}> x </button>
-                {name}
+                <div className="character-name">
+                  {name}
+                </div>
+
                 <div className="modal-image">
                   {
                     image ? <img src={image} alt="no image"></img> : <img src={RavenclawLogo} />

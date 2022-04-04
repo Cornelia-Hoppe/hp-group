@@ -4,6 +4,7 @@ import CharacterCard from "../Components/Ravenclaw/character-card/CharacterCard"
 import Nav from '../Components/Navbar/Nav';
 import Quotes from '../Components/Quotes'
 import Header from '../Components/Ravenclaw/header/Header';
+import {RavenclawLogo} from "../images/images"
 
 export const RavenclawContext = createContext();
 
@@ -39,6 +40,9 @@ export default function RavenclawPage()
             <div className="Ravenclaw-Page">
                 <header className='gryffindor-header'>
                     <Nav />
+                    <div className="hufflepuff-logo">
+                    <img src={RavenclawLogo} width="100px"></img>
+                    <h3>Ravenclaw house</h3></div>
                 </header>
                 <div className="main-container">
                     <Header />

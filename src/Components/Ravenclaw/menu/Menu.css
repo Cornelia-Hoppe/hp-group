@@ -2,18 +2,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem 0;
 }
-
-/*
-.menu-item{
-
-}
-*/
 
 .menuBar{
     display: flex;
     margin-top: 20px;
+}
+
+.searchbar{
+    cursor: pointer;
 }
 
 

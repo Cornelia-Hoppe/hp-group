@@ -13,6 +13,7 @@
     column-gap: 10px;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
     margin-left: 3px;
+    margin-top: 20px;
 }
 
 .memoryPage header {
@@ -23,3 +24,12 @@ header p {
     margin: 5px 0px;
     margin-left: 40px;
 }
+
+/* Media Query*/
+@media screen and (max-width: 800px) and (min-width: 394px) {
+    .memoryContainer{
+        grid-template-columns: auto auto auto auto auto;
+        background-image: url("../../images/backgrounds/bgGray.png");
+        background-size: cover;
+    }
+}  

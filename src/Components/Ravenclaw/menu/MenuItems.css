@@ -9,3 +9,7 @@
 .fa-angle-down{
     margin-left: 0.5rem;
 }
+
+.menu-item button:hover{
+    cursor:pointer;
+}
