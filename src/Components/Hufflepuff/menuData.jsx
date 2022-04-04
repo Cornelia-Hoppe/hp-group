@@ -1,4 +1,9 @@
 const DropdownMenu = [
+  
+  {
+    title: "all",
+   
+  },
   {
     title: "gender",
     dropdown: [

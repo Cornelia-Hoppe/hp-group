@@ -5,7 +5,7 @@ export default function SearchBar(props) {
     <input
     id="search-hufflepuff"
       type="text"
-      autofocus required
+      autoFocus required
       placeholder="Search character..."
       value={props.searchTerm}
       onChange={(e) => {

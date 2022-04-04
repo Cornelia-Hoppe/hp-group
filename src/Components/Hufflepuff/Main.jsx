@@ -14,7 +14,6 @@ export default function Main() {
     if (!selectedFilter) {
       return filteredData;
     }
-    console.log(selectedFilter);
     switch (selectedFilter) {
       case "female":
       case "male":
@@ -49,6 +48,11 @@ export default function Main() {
           (item) => item.hogwartsStaff === true
         );
         return staff;
+        case "All":
+        const All = filteredData.filter(
+          (item) => item.hogwartsStaff === true
+        );
+        return staff;
     }
   }
 
@@ -60,15 +64,12 @@ export default function Main() {
     setFilteredList(filteredData);
   }, [selectedFilter]);
 
-  function handleBtns() {
-    setFilteredList(characters);
-  }
+ 
 
   return (
     <div className="main-hufflepuff">
       <div className="searchcontainer-hufflepuff">
-       <p className="allbtn" 
-       onClick={handleBtns}>ALL</p>  
+       
         <SearchBar Search={setSearchTerm} />
         </div>
       <div className="filter-container">

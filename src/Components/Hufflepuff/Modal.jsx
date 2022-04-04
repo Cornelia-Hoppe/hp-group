@@ -6,9 +6,9 @@ export default function Modal(props) {
   const ModalContent = () => {
     return (
       <>
-        <div className="modal">
+        <div className="modal" onClick={() => setIsOpen(false)}>
           <div className="modal-content">
-            {/* <p  onClick={() => setIsOpen(false)}> x </p> */}
+           
             {props.name}
             <div className="modal-image">
               {props.image ? <img src={props.image} alt="no image"></img> : <img src={HufflepuffLogo}></img>} 

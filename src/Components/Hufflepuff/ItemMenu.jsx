@@ -6,7 +6,7 @@ const MenuItem = ({ item }) => {
   return (
     <div>
       <div className="filterhp" onClick={() => setIsSubMenuShow(!isSubMenuShow)}>
-        {item.title}
+      {item.title == "all" ? <> {item.title}</>  : <>{item.title} <i class="fa-solid fa-chevron-down"></i></> }
       </div>
       {item.dropdown && isSubMenuShow && <SubMenu dropDownItem={item.dropdown} />}
     </div>
