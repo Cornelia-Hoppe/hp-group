@@ -1,0 +1,40 @@
+
+.sortinghat-container {
+    font-family: "IM Fell English SC";
+    background-image: url(../images/backgrounds/bgBrown.png);
+    text-shadow: #ee6a0c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 4px 4px 2px rgb(41, 37, 37);
+  }
+  
+  .sortinghat-img {
+    width: 70vw;
+  }
+  .house-container {
+    text-align: center;
+    width: 60vw;
+    padding: 5px;
+    height: 50vh;
+  }
+  
+  .sortingbutton {
+    padding: 9px;
+    width: 20vw;
+    background-color: #1b4b43;
+    color: white;
+    font-size: 20px;
+  }
+  @media screen and (min-width: 500px) {
+    .sortinghat-img {
+      width: 30%;
+    }
+    .house-container {
+      text-align: center;
+      width: 60vw;
+      padding: 5px;
+      height: 30vh;
+    }
+  }
