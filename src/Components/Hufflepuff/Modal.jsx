@@ -11,7 +11,7 @@ export default function Modal(props) {
             <p className="modalbtn-hufflepuff" onClick={() => setIsOpen(false)}> x </p>
             {props.name}
             <div className="modal-image">
-              <img src={props.image} alt="no image"></img>
+              {props.image ? <img src={props.image} alt="no image"></img> : <img src={HufflepuffLogo}></img>} 
             </div>
             {props.hogwartsStudent === true && <div>Student</div>}
             {props.hogwartsStaff === true && <div>Staff</div>}

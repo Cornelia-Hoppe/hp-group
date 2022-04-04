@@ -55,8 +55,9 @@ export default function House() {
               </Link>
             </div>
           </div>
-        </div>
+        </div> 
       </div>
+     
     </>
   );
 }
