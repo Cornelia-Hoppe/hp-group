@@ -23,19 +23,10 @@ export default function Modal() {
                         : listData[indexModal].hogwartsStaff 
                         ? (<p>Staff</p>) : (<p></p>)
                     }
-                    <h2>House: {listData[indexModal].house}</h2>
-                    {listData[indexModal].patronus 
-                        ? (<h2>Patronus: {listData[indexModal].patronus.charAt(0).toUpperCase()+listData[indexModal].patronus.slice(1)}</h2>)
-                        : (<h2></h2>)
-                    }
-                    {listData[indexModal].dateOfBirth
-                        ? (<h2>Date of birth: {listData[indexModal].dateOfBirth}</h2>)
-                        : (<h2></h2>)
-                    }
-                    {listData[indexModal].actor
-                        ? (<h2>Actor: {listData[indexModal].actor}</h2>)
-                        : (<h2></h2>)
-                    }
+                    <h2>Gender: {listData[indexModal].gender ? listData[indexModal].gender : 'N/A'}</h2>
+                    <h2>Ancestry: {listData[indexModal].ancestry ? listData[indexModal].ancestry : 'N/A'}</h2>
+                    <h2>Patronus: {listData[indexModal].patronus ? listData[indexModal].patronus : 'N/A'}</h2>
+                    <h2>Actor: {listData[indexModal].actor ? listData[indexModal].actor : 'N/A'}</h2>
                 </div>                
             </div>
         </section>
