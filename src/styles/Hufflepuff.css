@@ -22,6 +22,7 @@ align-items: center;
 }
 .nav-hufflepuff img{
   animation: fadein 6s;
+  width: 12vw;
 }
 .character-list {
   text-align: center;
@@ -49,10 +50,8 @@ align-items: center;
 }
 
 .modalbtn-hufflepuff {
-  
   right: 55px;
   top: 55px;
-
  position: fixed;
 }
 .modal-content {
@@ -87,32 +86,67 @@ align-items: center;
 
 
 
-select {
-  /* appearance: none; */
-  background-color: transparent;
-  border: none;
-  margin: 2px;
-  width: 100%;
-}
 
-.select {
-  min-width: 15ch;
-  max-width: 30ch;
-  margin: 4px;
-  background-color: #fff;
-  border: 1px solid black;
-}
+/* one filter title */
+.filterhp {
+  background-color: rgb(185, 173, 0);
+  border-radius: 5px;
+  text-align: center;
+  width: 10vw;
+  padding:9px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 
-.filter-container {
+  cursor: pointer;
+}
+/* hela alltet */
+.filterbtn{
+  display: flex;
+  flex-direction: row;
+ list-style-type:none;
+ font-size: 16px;
+
+}
+/* alla dropar nerr */
+.filterbtn li {
+   width: 15vw;
+   height: 15vh;
+}
+/* bara dropdown från en */
+.filterbtn ul {
+  text-align: center;
+  display: flex;
   align-items: center;
   justify-content: center;
-  
+  flex-direction: column;
+  padding: 9px;
+  margin-top: 2px;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: rgb(185, 173, 0);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
-#search-hufflepuff {
- padding: 5px;
- margin: 20px;
- border-radius: 10px;
+.allbtn{
+  font-size: 16px;
+  width: 6vw;
+  text-align: center;
+  padding: 9px;
+  margin-top: 2px;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: rgb(185, 173, 0);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  margin: 10px;
 }
+.searchcontainer-hufflepuff{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#search-hufflepuff{
+  padding: 10px;
+  width: 20vw;
+}
+/*  */
 
 @media screen and (min-width: 500px) {
   .filter-container {

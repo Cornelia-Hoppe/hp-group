@@ -35,7 +35,7 @@
   height: 200vh;
   width: 100%;
   padding: 80px;
-  background-image: url(../../images/backgrounds/graybg.png);
+  background-color: black;
   animation: 0.9s slide-right;
 }
 
