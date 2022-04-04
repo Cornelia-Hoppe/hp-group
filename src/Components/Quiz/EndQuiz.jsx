@@ -20,13 +20,13 @@ export default function EndQuiz() {
   const scoreQuote = () => {
     switch (score) {
       case 0:
-        return 'Ehhhh... you´r quite embarrassing...'
+        return 'Ehhhh... you´r should probably die...Avada Kedavra!'
         // break;
       case 1:
-        return 'Ehhhh... you´r quite embarrassing...'
+        return 'Hmmm... you´r quite embarrassing...'
         // break;
       case 2:
-        return 'Hmmm... you´r quite embarrassing...'
+        return 'Have you even seen any of the movies?!'
         // break;
       case 3:
         return 'You can do better!'
@@ -39,8 +39,7 @@ export default function EndQuiz() {
         // break;
       default:
         break;
-    }
-    
+    } 
   }
 
   return (
