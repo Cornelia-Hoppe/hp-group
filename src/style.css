@@ -175,7 +175,7 @@ body {
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 15px 30px;
+  padding: 12px 24px;
   text-align: center;
   border: none;
   clip-path: polygon(7% 0, 93% 0, 100% 50%, 93% 100%, 7% 100%, 0 50%);
@@ -184,7 +184,7 @@ body {
   background-repeat: no-repeat;
   transition: background-position-y ease-in-out 250ms;
   width: 200px;
-  margin: 20px;
+  margin: 10px;
  }
  
  .home-body button:hover {
@@ -198,7 +198,6 @@ body {
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(./images/backgrounds/bgHog.jpg);
   background-size: cover;
-  position: fixed;
   height: 100%;
   width: 100%;
 }
@@ -238,5 +237,5 @@ body {
   transition: 300ms;
 }
 .link-b:hover{
-  font-size: 24px;
+  text-decoration: underline;
 }

@@ -15,6 +15,7 @@ export function NavbarSlytherin(props){
 export function NavItem(props){
 
   const [open, setOpen] = useState(false);
+  
 
   return (
     <li className='nav-item'>
@@ -23,5 +24,7 @@ export function NavItem(props){
       </button>
       {open && props.children}
     </li>
+
   );
 }
+
