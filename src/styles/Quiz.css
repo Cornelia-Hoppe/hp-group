@@ -10,14 +10,17 @@
   justify-content: center;
   background: url(../images/backgrounds/bgPurple.png) no-repeat;
   background-size: cover;
-  min-height: 100vh;
   color:var(--text) ;
   padding: 0 1rem;
+  align-items: center;
 }
-.quiz-header,.quiz-main,.quizend,.quizstart, .quiz-body > .home-nav-body{
+.quiz-header,.quiz-main,.quizend,.quizstart, .quiz-body > .home-nav-body, .quiz-footer{
   animation: fadein 5s;
 }
 
+.quiz-footer{
+  margin-top: 5rem;
+}
 .quiz-main--content, .quiz-main--button{
   margin-top: 1rem;
 }
@@ -79,7 +82,8 @@
   background-color: var(--button-hover);
 }
 
-@media screen and (min-width:400px) {
+
+@media screen and (min-width:500px) {
   .quiz-header{
     margin-bottom: 2rem;
   }

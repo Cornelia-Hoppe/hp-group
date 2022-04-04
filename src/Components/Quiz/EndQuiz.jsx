@@ -19,21 +19,24 @@ export default function EndQuiz() {
 
   const scoreQuote = () => {
     switch (score) {
+      case 0:
+        return 'Ehhhh... you´r quite embarrassing...'
+        // break;
       case 1:
-        return 'Hmmm... I have no comment...'
-        break;
+        return 'Ehhhh... you´r quite embarrassing...'
+        // break;
       case 2:
         return 'Hmmm... you´r quite embarrassing...'
-        break;
+        // break;
       case 3:
         return 'You can do better!'
-        break;
+        // break;
       case 4:
         return 'Almost perfect score!'
-        break;
+        // break;
       case 5:
-        return 'WOW!!!! Perfect score!'
-        break;
+        return 'WOW!!!! Perfect score!!! 10 Points to your house!'
+        // break;
       default:
         break;
     }

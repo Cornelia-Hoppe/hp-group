@@ -5,6 +5,7 @@ import QuizGame from '../Components/Quiz/QuizGame';
 import EndQuiz from '../Components/Quiz/EndQuiz';
 import {Questions} from "../assets/Questions"
 import HomeNav from '../Components/HomeNav';
+import Quotes from '../Components/Quotes';
 
 export const QuizContext = createContext()
 export default function Quiz() {
@@ -26,6 +27,9 @@ export default function Quiz() {
             {gameState === 'quiz' && <QuizGame />}
             {gameState === 'end' && <EndQuiz />}
           </main>
+          <footer className='quiz-footer'>
+            <Quotes/>
+          </footer>
       </section>
     </QuizContext.Provider>
   )

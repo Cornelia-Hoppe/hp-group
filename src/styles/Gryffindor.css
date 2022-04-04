@@ -104,7 +104,7 @@
 }
 
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 500px) {
     .gryffindor-menu{
         justify-content: center;
     }
@@ -194,7 +194,7 @@
     padding: 0.1rem 0;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 500px) {
     .modal-card{
         height: 70vh;
         width: 50vw;  
