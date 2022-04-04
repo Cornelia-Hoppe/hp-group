@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { memoryArray } from '../assets/memory.js';
 import Card from '../Components/memory/Card.jsx';
 import "../styles/Memory.css";
-import HomeNav from '../assets/HomeNav';
+import HomeNav from '../Components/HomeNav';
 import Quotes from '../Components/Quotes'
 
 function shuffleArray(array) {

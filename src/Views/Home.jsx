@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import {HouseLogo} from '../images/images'
-import HomeNav from '../assets/HomeNav'
+import Quote from '../Components/Quotes';
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
         <button> <Link className='link-a' to='sortinghat'>Sorting hat</Link></button>
         <button> <Link className='link-a' to='memory'>Memory</Link></button>
       </section>
+      <Quote />
     </div>
   )
 }

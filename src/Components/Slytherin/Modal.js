@@ -8,7 +8,8 @@ const MODAL_STYLES = {
     backgroundColor :'#000',
     color :'white',
     padding: '10px',
-    border: '4px solid #155715',
+    border: '4px solid #003200',
+    borderRadius: '10px',
     zIndex: '1000',
     fontsize: '20px',
 }

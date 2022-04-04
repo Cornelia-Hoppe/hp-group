@@ -13,20 +13,20 @@ const clickedMenu = (menuTitle) => {
 }
 
     return(
-        <div className="menu-item">
+        <div className="gryffindor-menu-item">
             {item.submenu ? (
                 <>
-                    <button type="button" onClick={() => setDropDown((prev) => !prev)} className='menu-button menu-button--title'>
+                    <button type="button" onClick={() => setDropDown((prev) => !prev)} className='gryffindor-menu-button gryffindor-menu-button--title'>
                         {item.title}<i className={`fa-solid fa-angle-down ${dropDown ? "fa-rotate-180" : ""}`}></i>
                     </button>
-                    <div className={`dropdown ${dropDown ? "show" : ""}`}>
+                    <div className={`gryffindor-dropdown ${dropDown ? "show" : ""}`}>
                         {item.submenu.map((submenu, index) => (
-                        <button onClick={()=> clickedMenu(submenu.title)} key={index} className='menu-button menu-button--subtitle'>{submenu.title}</button>
+                        <button onClick={()=> clickedMenu(submenu.title)} key={index} className='gryffindor-menu-button gryffindor-menu-button--subtitle'>{submenu.title}</button>
                         ))}
                     </div>
                 </>
             ) : (
-                <button onClick={()=> clickedMenu(item.title)} className='menu-button menu-button--title'>{item.title}</button>                )}
+                <button onClick={()=> clickedMenu(item.title)} className='gryffindor-menu-button gryffindor-menu-button--title'>{item.title}</button>                )}
         </div>
     )
 }

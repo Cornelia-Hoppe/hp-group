@@ -1,10 +1,10 @@
 import React, {useState, useEffect, createContext} from 'react'
 import Menu from '../Components/Gryffindor/Menu'
 import CharacterList from '../Components/Gryffindor/CharacterList'
-import Logo from '../Components/Gryffindor/Logo'
 import Modal from '../Components/Gryffindor/Modal'
 import Search from '../Components/Gryffindor/Search'
 import Nav from '../Components/Navbar/Nav'
+import {GryffindorLogo} from '../images/images'
 import "../styles/Gryffindor.css"
 import Quotes from '../Components/Quotes'
 
@@ -70,17 +70,18 @@ export default function Gryffindor() {
     }
   
   return (
-    <GlobalContext.Provider value={{listData, searchTerm, setSearchTerm, openModal, setOpenModal, indexModal, setIndexModal, chosenMenu, setChosenMenu}}>
+    <GlobalContext.Provider value={{getListData,listData, searchTerm, setSearchTerm, openModal, setOpenModal, indexModal, setIndexModal, chosenMenu, setChosenMenu}}>
       <section className='gryffindor-body'>
         <header className='gryffindor-header'>
           <Nav />
-          <Logo />
+          <section className='gryffindor-header--logo'>
+            <img src={GryffindorLogo} alt="Gryffindor" />
+            <h1>Gryffindor House</h1>
+          </section>
         </header>
         <main className='gryffindor-main'>
-          <div>
-            <Menu />
-            <Search />
-          </div>
+          <Menu />
+          <Search />
           <CharacterList />
           {openModal && <Modal />}
         </main>

@@ -75,7 +75,7 @@ const [isOpen, setIsOpen] = useState (false);
 
 const [clickedIndex, setClickedIndex] = useState(0);
 
-const [searchTerm, setSerchTerm] = useState('');
+const [searchTerm, setSearchTerm] = useState("");
 
 return (
   <div className='slytherin-body'>
@@ -97,7 +97,13 @@ return (
      < DropdownMenuGender />
     </NavItem>
   </NavbarSlytherin>
-  <input className='slytherin-input' type="text" placeholder='Search...' onChange={event =>{setSerchTerm(event.target.value)}} />
+  <input 
+    className='slytherin-input' 
+    type="text"  
+    placeholder='Search...' 
+    onChange={(event) =>{setSearchTerm(event.target.value);
+    }}
+  />
   </header>
  
   
@@ -108,17 +114,23 @@ return (
   {wizards.map((data, index) =>{ 
    if (index === clickedIndex) {
      return <div className='modal-slytherin'>
-  <div className='modal-row'> <WizardCard data={wizards[clickedIndex].name} /> </div>
-       <img src={wizards[clickedIndex].image} alt='caracter'/>
-       {wizards[clickedIndex].hogwartsStudent 
+  <div className='modal-row'> <h1><WizardCard data={wizards[clickedIndex].name} /></h1> </div>
+
+  {wizards[clickedIndex].image 
+                    ? (<img src={wizards[clickedIndex].image} alt='caracter'/>) 
+                    : (<img src={SlytherinLogo} alt='caracter'/>)
+                }
+
+  {wizards[clickedIndex].hogwartsStudent 
                         ? (<p>Student</p>) 
                         : wizards[clickedIndex].hogwartsStaff 
                         ? (<p>Staff</p>) : (<p></p>)
                     }
-    <div className='modal-row'>  <p>Gender:</p><WizardCard gender={wizards[clickedIndex].gender}/> </div>
-    <div className='modal-row'>  <p>Actor:</p><WizardCard actor={wizards[clickedIndex].actor}/> </div>
-    <div className='modal-row'>  <p>Patronus:</p><WizardCard patronus={wizards[clickedIndex].patronus}/> </div>
-    <div className='modal-row'>  <p>Born:</p><WizardCard age={wizards[clickedIndex].dateOfBirth}/> </div>
+    <div className='modal-row'>  <p>Gender:&nbsp;</p><WizardCard gender={wizards[clickedIndex].gender}/> </div>
+    <div className='modal-row'>  <p>Actor:&nbsp; </p><WizardCard actor={wizards[clickedIndex].actor ? wizards[clickedIndex].actor : 'N/A'}/> </div>
+    <div className='modal-row'>  <p>Patronus:&nbsp; </p><WizardCard patronus={wizards[clickedIndex].patronus ? wizards[clickedIndex].patronus : 'N/A'}/> </div>
+    <div className='modal-row'>  <p>Ancestery:&nbsp; </p><WizardCard ancestry={wizards[clickedIndex].ancestry ? wizards[clickedIndex].ancestry : 'N/A'}/> </div>
+  
   </div>
     }
     return (<div />)
@@ -129,12 +141,12 @@ return (
   {active === "FirstCard" && 
   <card className='alWizardDisp , SlytherinDisp'>
     {wizards.filter((data)=>{
-    if (searchTerm === '' ) {
+    if (searchTerm === "") {
       return data
     } else if (data.name.toLowerCase().includes(searchTerm.toLowerCase())) {
       return data
     }
-    return (<div />)
+
   }).map((data, index) => {
   return <button onClick={()=> {setIsOpen(true); setClickedIndex(index)}} > <WizardCard key={index} data={data.name}/> </button>
       
@@ -150,12 +162,11 @@ return (
     } else if (data.name.toLowerCase().includes(searchTerm.toLowerCase())) {
       return data
     }
-    return (<div />)
   }).map((data, index) => { 
    if (data.gender === "female") {
      return <button onClick={()=> {setIsOpen(true); setClickedIndex(index)}} > <WizardCard key={index} data={data.name}/> </button>
     }
-    return (<div />)
+
  })}
   </card> }
   {active === "MaleCard" && 
@@ -166,12 +177,11 @@ return (
     } else if (data.name.toLowerCase().includes(searchTerm.toLowerCase())) {
       return data
     }
-    return (<div />)
     }).map((data, index) => { 
    if (data.gender === "male") {
     return <button onClick={()=> {setIsOpen(true); setClickedIndex(index)}} > <WizardCard key={index} data={data.name}/> </button>
     }
-    return (<div />)
+  
  })}
   </card> }
   {active === "StaffCard" && 
@@ -180,13 +190,11 @@ return (
     if (searchTerm === '' ) {
       return data
     } else if (data.name.toLowerCase().includes(searchTerm.toLowerCase())) {
-      return data
+      return data 
     }
-    return (<div />)
     }).map((data, index) =>{ if (data.hogwartsStaff === true) {
      return <button onClick={()=> {setIsOpen(true); setClickedIndex(index)}} > <WizardCard key={index} data={data.name}/> </button>
     }
-    return (<div />)
  })}
   </card> }
   {active === "StudentCard" && 
