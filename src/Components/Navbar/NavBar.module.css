@@ -1,86 +1,93 @@
-
 .NavBar a {
-    color: white;
-    margin: 0 1rem;
-    text-decoration: none;
-  }
-  .NavBar a:hover {
-    text-decoration: underline;
-  }
-  .NavBar li {
-    list-style: none;
-    margin: 0 1rem;
-  }
-  .active {
-    font-size: larger;
-    text-decoration: underline;
-    font-weight: bolder;
-    
-  }
-  .NavBar .Navigation  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+.NavBar a:hover {
+  text-decoration: underline;
+}
+.NavBar li {
+  list-style: none;
+  margin: 0 1rem;
+}
+
+.NavBar .Navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.NavBar .Navigation img{
+padding: 30px;
 }
 .NavBar .Navigation ul {
-    display: flex;
-    padding: 20px;
-    align-items: center;
+  display: flex;
+  padding: 20px;
+  align-items: center;
 }
 
 .NavBar .MobileNavigation {
-display: none;
+  display: none;
 }
 
 .NavBar .MobileNavigation li {
-    flex-direction: column;
-    left: 0;
-    padding: 10px;
-
+  left: 0;
+  margin-bottom: 25px;
 }
 .NavBar .MobileNavigation ul {
-margin-top: 10vh;
-height: 200vh;
-min-width: 100vw;
-background-color: black;
+  margin: 0;
+  height: 200vh;
+  width: 100%;
+  padding: 80px;
+  background-color: black;
+  animation: 0.9s slide-right;
 
 }
+
 .NavBar .MobileNavigation .Hamburger {
-    position: fixed;
-    cursor: pointer;
-    font-size: 40px;
-}
+  position: fixed;
+  cursor: pointer;
+  font-size: 35px;
+  padding: 20px;
 
-@media (max-width: 800px) {
-.NavBar .Navigation {
-    display: none;
 }
-.NavBar .MobileNavigation {
+@media (max-width: 800px) {
+  .NavBar .Navigation {
+    display: none;
+  }
+  .NavBar .MobileNavigation {
     display: flex;
     position: fixed;
-    left: 0;    
-
+    left: 0; 
+  }
 }
 
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes slide-out {
+  from {
+    margin-right: -100%;
+  }
+  to {
+    margin-right: 0%;
+  }
 }
 
+/***** Slide Left *****/
 
-
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.fade-in {
+  animation: fadeIn ease 3s;
 }
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@-webkit-keyframes slide {
-    100% { left: 0; }
-}
-
-@keyframes slide {
-    100% { left: 0; }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

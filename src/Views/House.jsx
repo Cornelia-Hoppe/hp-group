@@ -6,15 +6,16 @@ import {
   RavenclawLogo,
   HouseLogo,
 } from "../images/images";
+import "../styles/House.css"
 import { Link } from "react-router-dom";
+import HomeNav from "../assets/HomeNav"
 export default function House() {
   return (
     <>
       <div className="house-container-h">
+        <HomeNav />
         <div>
-          <Link to="/">
-            <img id="house-logo-h" src={HouseLogo} />
-          </Link>
+          
           <h1>CHOOSE HOUSE</h1>
         </div>
         <div className="house-images-h">
@@ -55,8 +56,9 @@ export default function House() {
               </Link>
             </div>
           </div>
-        </div>
+        </div> 
       </div>
+     
     </>
   );
 }

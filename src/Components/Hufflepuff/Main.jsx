@@ -3,7 +3,7 @@ import { useState, useContext, useEffect } from "react";
 import Modal from "./Modal";
 import SearchBar from "./SearchBar";
 import { ApiContext } from "./ApiProvider";
-import Filter from "./Filter";
+import FilterMenu from "./FilterMenu"
 export default function Main() {
   const [[characters, setCharacters], [filteredList, setFilteredList]] =
     useContext(ApiContext);
@@ -60,37 +60,23 @@ export default function Main() {
     setFilteredList(filteredData);
   }, [selectedFilter]);
 
+  function handleBtns() {
+    setFilteredList(characters);
+  }
+
   return (
-    <div className="main-hufflepuff" >
+    <div className="main-hufflepuff">
+      <div className="searchcontainer-hufflepuff">
+       <p className="allbtn" 
+       onClick={handleBtns}>ALL</p>  
+        <SearchBar Search={setSearchTerm} />
+        </div>
       <div className="filter-container">
-        <Filter
-          onChange={handleChange}
-          title={"Gender"}
-          opt1={"female"}
-          opt2={"male"}
-        />
-        <Filter
-          onChange={handleChange}
-          title={"Ancestry"}
-          opt1={"half-blood"}
-          opt2={"pure-blood"}
-          opt3={"muggleborn"}
-        />
-        <Filter
-          onChange={handleChange}
-          title={"Species"}
-          opt1={"ghost"}
-          opt2={"human"}
-        />
-        <Filter
-          onChange={handleChange}
-          title={"Occupation"}
-          opt1={"staff"}
-          opt2={"student"}
-        />
+       
+        <FilterMenu onClick={handleChange} />
       </div>
 
-      <SearchBar Search={setSearchTerm} />
+   
 
       <div className="character-list">
         {filteredList
@@ -110,7 +96,6 @@ export default function Main() {
                 name={characters.name}
                 ancestry={characters.ancestry}
                 gender={characters.gender}
-                yearOfBirth={characters.yearOfBirth}
                 house={characters.house}
                 patronus={characters.patronus}
                 actor={characters.actor}
