@@ -8,7 +8,7 @@ import {
 } from "../images/images";
 import "../styles/House.css"
 import { Link } from "react-router-dom";
-import HomeNav from "../assets/HomeNav"
+import HomeNav from "../Components/HomeNav"
 export default function House() {
   return (
     <>

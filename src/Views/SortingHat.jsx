@@ -1,7 +1,7 @@
 import React from 'react';
 import {Hat} from "../images/images";
 import Random from '../Components/Hat/RandomReturn';
-import HomeNav from "../assets/HomeNav";
+import HomeNav from "../Components/HomeNav";
 import Quote from "../Components/Quotes";
 import "../styles/Sortinghat.css"
 
