@@ -4,7 +4,7 @@ import MenuItem from "./ItemMenu";
 
 const FilterMenu = (props) => {
   return (
-    <nav>
+
       <ul className="filterbtn">
         {DropdownMenu.map((item) => {
           return (
@@ -14,7 +14,6 @@ const FilterMenu = (props) => {
           );
         })}
       </ul>
-    </nav>
   );
 };
 

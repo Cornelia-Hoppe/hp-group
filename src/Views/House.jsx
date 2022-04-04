@@ -6,6 +6,7 @@ import {
   RavenclawLogo,
   HouseLogo,
 } from "../images/images";
+import "../styles/House.css"
 import { Link } from "react-router-dom";
 import HomeNav from "../assets/HomeNav"
 export default function House() {

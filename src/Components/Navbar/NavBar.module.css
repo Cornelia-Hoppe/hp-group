@@ -16,6 +16,9 @@
   align-items: center;
   justify-content: center;
 }
+.NavBar .Navigation img{
+padding: 30px;
+}
 .NavBar .Navigation ul {
   display: flex;
   padding: 20px;
@@ -43,7 +46,9 @@
 .NavBar .MobileNavigation .Hamburger {
   position: fixed;
   cursor: pointer;
-  font-size: 40px;
+  font-size: 35px;
+  padding: 20px;
+
 }
 @media (max-width: 800px) {
   .NavBar .Navigation {
@@ -52,7 +57,7 @@
   .NavBar .MobileNavigation {
     display: flex;
     position: fixed;
-    left: 0;
+    left: 0; 
   }
 }
 

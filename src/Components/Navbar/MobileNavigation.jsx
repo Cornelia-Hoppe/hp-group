@@ -5,12 +5,11 @@ import { useState } from 'react';
 
 const MobileNavigation = () => {
     const [open, setOpen] = useState(false)
-    const hamburgerIcon =  <i class="fa-solid fa-bars fa-2x"  
+    const hamburgerIcon = <div className={classes.Hamburger}><i class="fa-solid fa-bars fa-1x"  
     onClick={() => setOpen(!open)}
-    ></i>
+    ></i> </div> 
     const closeIcon =  <div className={classes.Hamburger}
-    onClick={() => setOpen(!open)}
-    >x</div>
+    onClick={() => setOpen(!open)}>  x</div>
     
   return (
     <nav className={classes.MobileNavigation}>
