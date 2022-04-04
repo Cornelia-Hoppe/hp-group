@@ -9,6 +9,7 @@
     margin: 10px;
     font-weight: 600;
     color: black;
+    text-shadow: 1px 1px 4px rgb(34, 184, 34);
 }
 
 .slytherin-input{
@@ -54,22 +55,18 @@
     animation: fadein 3s;
  }
   
-  .navbar-slytherin {
-    background:none;
-    padding: 0 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-  }
   
   .navbar-nav-slytherin {
   
     display: flex;
-    justify-content: flex-end;
     padding-top: 4px;
     background: none;
+  }
+
+  @media screen and (max-width: 500px) {
+    .navbar-nav-slytherin {
+    display: block;
+    }
   }
 
 
@@ -122,16 +119,24 @@
     margin: 1rem 0;
 }
   .dropdown-slytherin {
-    position: absolute;
-    top : 120px;
+    position: fixed;
+    top : 230px; 
+    left: 50%;
     transform: translateX(-45%);
     border-radius: 5px;
     padding: 10px;
     overflow: hidden;
     border: 3px solid #fff;
     background-color: #155715;
-    
   }
+
+  @media screen and (max-width: 500px) {
+    .dropdown-slytherin {
+    top: 200px ;
+    left: 50%;
+    }
+  }
+  
  
 
   .modal-slytherin {
@@ -139,18 +144,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0px;
   }
   .modal-slytherin img{
-    width:200px ;
+    width:160px ;
     padding: 10px;
   }
   
   .modal-row {
-      display: flex;
-      font-weight: 500;
+    display: flex;
+    flex-direction: row;
   }
-
   .modal-row p{
-      font-size: 18px;
+    margin: 0px;
+  }
+  .modal-row h1{
+    color: #fff;
+    text-shadow: 2px 3px 4px lightgreen;
   }
   
