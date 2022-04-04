@@ -125,7 +125,7 @@ return (
     <div className='modal-row'>  <p>Actor:&nbsp; </p><WizardCard actor={wizards[clickedIndex].actor}/> </div>
     <div className='modal-row'>  <p>Patronus:&nbsp; </p><WizardCard patronus={wizards[clickedIndex].patronus}/> </div>
     <div className='modal-row'>  <p>Ancestery:&nbsp; </p><WizardCard ancestry={wizards[clickedIndex].ancestry}/> </div>
-    <div className='modal-row'>  <p>Born:&nbsp; </p><WizardCard dateOfBirth={wizards[clickedIndex].dateOfBirth}/> </div>
+
   </div>
     }
     return (<div />)
