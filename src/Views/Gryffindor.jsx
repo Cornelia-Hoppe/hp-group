@@ -7,6 +7,7 @@ import Nav from '../Components/Navbar/Nav'
 import {GryffindorLogo} from '../images/images'
 import "../styles/Gryffindor.css"
 import Quotes from '../Components/Quotes'
+import ScrollToTop from '../Components/Gryffindor/ScrollToTop'
 
 export const GlobalContext = createContext()
 export default function Gryffindor() {
@@ -83,6 +84,7 @@ export default function Gryffindor() {
           <Menu />
           <Search />
           <CharacterList />
+          <ScrollToTop />
           {openModal && <Modal />}
         </main>
         <footer>

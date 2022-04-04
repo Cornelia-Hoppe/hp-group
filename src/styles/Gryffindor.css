@@ -102,29 +102,6 @@
     background-color: var(--color-red);
     padding: 0; 
 }
-
-
-@media screen and (min-width: 500px) {
-    .gryffindor-menu{
-        justify-content: center;
-    }
-    .gryffindor-menu::-webkit-scrollbar {
-        display:none;
-    }
-    .gryffindor-menu-item{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .gryffindor-menu-button{
-        width: 150px;
-    }
-    .gryffindor-dropdown.show {
-        justify-content: center;
-        align-items: center;
-        width: 150px;
-    }
-}
  
 
 .characters{
@@ -177,13 +154,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 20px;      
+    border-radius: 20px;   
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);   
 }
 .modal--image{
     width: 100%;
     height: 250px;
     object-fit: contain;
-    border-radius: 20px;      
 }
 .modal--info{
     text-align: left;
@@ -195,21 +173,59 @@
     padding: 0;
 }
 
-@media screen and (min-width: 500px) {
-    .modal-card{
-        height: 80vh;
-        width: 30vw;  
-    }
-    .modal--image{
-        width: 100%;
-        height: 250px;
-        object-fit: contain;
-    }
-    .modal--info{
-        font-size: 16px;
-    }
+
+.back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
+  
+.back-to-top:hover {
+    color: var(--color-orange);    
+    transition: 0.5s;
 }
 
+@media screen and (min-width: 500px) {
+  .gryffindor-menu{
+      justify-content: center;
+  }
+  .gryffindor-menu::-webkit-scrollbar {
+      display:none;
+  }
+  .gryffindor-menu-item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .gryffindor-menu-button{
+      width: 150px;
+  }
+  .gryffindor-dropdown.show {
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+  }
+  .modal-card{
+      height: 80vh;
+      width: 30vw;  
+  }
+  .modal--image{
+      width: 100%;
+      height: 250px;
+      object-fit: contain;
+  }
+  .modal--info{
+      font-size: 16px;
+  }
+  .back-to-top {
+      bottom: 200px;
+      right: 30%;
+  }
+}
+  
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
