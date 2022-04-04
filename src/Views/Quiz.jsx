@@ -17,8 +17,8 @@ export default function Quiz() {
   return (
     <QuizContext.Provider value={{Questions, gameState, setGameState, score, setScore, currentQuestion, setCurrentQuestion,selected, setSelected}} >
       <section className='quiz-body'>
-      <HomeNav />
         <header className='quiz-header'>
+          <HomeNav />
           <h1>Hogwarts quiz</h1>
         </header>
           <main className='quiz-main'>

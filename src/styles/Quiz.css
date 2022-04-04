@@ -1,3 +1,7 @@
+:root{
+ --text: rgb(190, 167, 33);
+ --button-hover: #ffe593;
+}
 .quiz-body{
   min-height: 100vh;
   display: flex;
@@ -7,7 +11,7 @@
   background: url(../images/backgrounds/bgPurple.png) no-repeat;
   background-size: cover;
   min-height: 100vh;
-  color: rgb(190, 167, 33);
+  color:var(--text) ;
   padding: 0 1rem;
 }
 .quiz-header,.quiz-main,.quizend,.quizstart, .quiz-body > .home-nav-body{
@@ -24,18 +28,18 @@
   width: 250px;
   padding: 1rem 2rem;
   background-color: #000000;
-  color: #ffe593;
+  color: var(--button-hover);
   border: none;
   border-radius: 5px;
   font-size: 20px;
 }
 .start-end-button:hover , .next-button:hover{
   color: black;
-  background-color: #ffe593;
+  background-color: var(--button-hover);
 }
 .answer-button:hover {
   transform: scale(1.1);
-  color: #ffe593;
+  color: var(--button-hover);
 }
 .start-end-button:hover , .next-button:hover, .answer-button:hover{
   transition: 0.5s ease;
@@ -72,7 +76,7 @@
   color:black;
   transform: scale(1.1);
   transition: 0.5s ease;
-  background-color: #ffe593;
+  background-color: var(--button-hover);
 }
 
 @media screen and (min-width:400px) {
