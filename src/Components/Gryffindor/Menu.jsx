@@ -36,7 +36,7 @@ export default function Menu() {
   ]
 
   return (
-    <section className='menu'>
+    <section className='gryffindor-menu'>
         {menuItems.map((menu, index) => (
           <MenuItems item={menu} key={index} />   
         ))}

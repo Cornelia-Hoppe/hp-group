@@ -19,9 +19,7 @@ export default function CharacterList() {
         {listData.map((data,index)=>(
           listData[index].name.toLowerCase().includes(search.toLowerCase())
             &&
-            
           <h3 key={index} onClick={()=>handleClick(index)}>{data.name}</h3>
-         
         ))}
     </section>
   )
