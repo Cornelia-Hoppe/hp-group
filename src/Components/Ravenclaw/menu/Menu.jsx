@@ -10,7 +10,6 @@ export default function Menu() {
     const { characterList, setFilteredCharacterList } = ctx;
 
   const menuItems = [
-    {title: "All"},
     {title: "Gender",
         submenu: [
           {title: "Female"},
@@ -49,12 +48,17 @@ export default function Menu() {
         setFilteredCharacterList(filteredCharacterNameList);
     }
 
+    const resetCharacters = () => {
+      setFilteredCharacterList(characterList);
+    }
+
   return (
     <section className='menu'>
       <div>
       <input className="searchbar" type="text" placeholder="Search for character" onInput={ (event) => filterByInput(event.target.value) } />
       </div>
       <div className="menuBar">
+        <button className="allButton" onClick={() => resetCharacters()}>All</button>
         {
             menuItems.map((menu, index) => <MenuItems item={menu} key={index} />)
         }

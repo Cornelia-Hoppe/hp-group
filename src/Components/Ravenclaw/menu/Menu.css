@@ -6,6 +6,8 @@
 
 .menuBar{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -13,12 +15,11 @@
     cursor: pointer;
 }
 
-
-/* Media Query */
-@media screen and (max-width: 428px) {
-    .menu{
-        display: flex;
-        flex-direction: column;
-    }
-}    
+.allButton {
+    min-width: 15ch;
+    max-width: 30ch;
+    margin: 4px;
+    background-color: #fff;
+    border: 1px solid black;
+}
 

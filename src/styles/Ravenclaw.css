@@ -4,6 +4,7 @@
     background-color: #cd7f32;
     display:flex;
     flex-direction: column;
+    animation: fadein 5s;
 }
 
 .main-container{
@@ -17,6 +18,8 @@
 p:hover{
         cursor: pointer;
 }
+
   
+
 
 

@@ -88,20 +88,18 @@ const clickedMenu = (menuTitle) => {
 
        return(
             <div className="menu-item">
-                {item.submenu ? (
-                    <>
-                        <button type="button" onClick={() => setDropDown((prev) => !prev)}>
-                            {item.title}<i className="fa-solid fa-angle-down"></i>
-                        </button>
-                        <div className={`dropdown ${dropDown ? "show" : ""}`}>
-                            {item.submenu.map((submenu, index) => (
-                            <button onClick={()=> clickedMenu(submenu.title)}key={index}>{submenu.title}</button>
-                            ))}
-                        </div>
-                    </>
-                    ) : (
-                        <button onClick={()=> clickedMenu(item.title)}>{item.title}</button>
-                )}
+                <select id="standard-select" onChange={(evt) => clickedMenu(evt.target.value)}>
+                    <option value="" disabled selected>{item.title}</option>
+                    {
+                        item.submenu ? (
+                            item.submenu.map((submenu, index) => (
+                                <option value={submenu.title}>{submenu.title}</option>
+                            ))
+                        ) : (
+                            <></>
+                        )
+                    }
+                </select>
             </div>
        )
 }

@@ -2,8 +2,9 @@ import React, { useEffect } from 'react';
 //När man importerar memoryArray behövs måsvingar runt för att den inte exporteras med default.
 import { memoryArray } from '../assets/memory.js';
 import Card from '../Components/memory/Card.jsx';
-import "../Components/memory/Memory.css"
+import "../styles/Memory.css";
 import HomeNav from '../assets/HomeNav';
+import Quotes from '../Components/Quotes'
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -141,6 +142,9 @@ export default function Memory()
                     />)
                 }
             </section>
+            <footer>
+                <Quotes />
+            </footer>
         </main>
     )
 }

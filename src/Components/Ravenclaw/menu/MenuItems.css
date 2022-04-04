@@ -1,13 +1,21 @@
-.dropdown {
+.ravenclawDropdown {
     display: none;
 }
-.dropdown.show {
+.ravenclawDropdown.show {
     display: flex;
     flex-direction: column;
 }
 
 .fa-angle-down{
     margin-left: 0.5rem;
+}
+
+.menu-item {
+    min-width: 15ch;
+    max-width: 30ch;
+    margin: 4px;
+    background-color: #fff;
+    border: 1px solid black;
 }
 
 .menu-item button:hover{

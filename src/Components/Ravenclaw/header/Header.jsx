@@ -9,7 +9,7 @@ export default function Header(props)
     //För att kunna ha ett onClick-event och även skicka med argument till våra funktioner, behöver vi en arrowfunktion i vårt onClick-event.
     //Input-elementet söker efter karaktärer.
     return(
-        <header className="header">
+        <header>
             <Menu />
         </header>
     )
