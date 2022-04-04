@@ -57,15 +57,14 @@
   
   
   .navbar-nav-slytherin {
-  
-    display: flex;
-    padding-top: 4px;
-    background: none;
+    display: block;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (min-width: 500px) {
     .navbar-nav-slytherin {
-    display: block;
+      display: flex;
+      padding-top: 4px;
+
     }
   }
 
@@ -129,14 +128,6 @@
     border: 3px solid #fff;
     background-color: #155715;
   }
-
-  @media screen and (max-width: 500px) {
-    .dropdown-slytherin {
-    top: 200px ;
-    left: 50%;
-    }
-  }
-  
  
 
   .modal-slytherin {
