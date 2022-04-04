@@ -146,8 +146,6 @@
     background-color: rgba(0, 0, 0, 0.6);
 }
 .modal-card{
-    height: 70vh;
-    width: 65vw;
     position: relative;
     background-color: var(--color-red);
     color: var(--color-orange);
@@ -157,6 +155,9 @@
     border-radius: 20px;   
     -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);   
+} 
+.modal-card > h2{
+    padding: 0 0.5rem;
 }
 .modal--image{
     width: 100%;
@@ -207,10 +208,6 @@
       justify-content: center;
       align-items: center;
       width: 150px;
-  }
-  .modal-card{
-      height: 80vh;
-      width: 30vw;  
   }
   .modal--image{
       width: 100%;
