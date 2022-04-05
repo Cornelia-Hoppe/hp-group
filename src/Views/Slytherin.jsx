@@ -114,7 +114,7 @@ return (
   {wizards.map((data, index) =>{ 
    if (index === clickedIndex) {
      return <div className='modal-slytherin'>
-  <div className='modal-row'> <h1><WizardCard data={wizards[clickedIndex].name} /></h1> </div>
+  <div className='modal-row'> <h1><WizardCard key={index} data={wizards[clickedIndex].name} /></h1> </div>
 
   {wizards[clickedIndex].image 
                     ? (<img src={wizards[clickedIndex].image} alt='caracter'/>) 
@@ -139,7 +139,7 @@ return (
   </Modal>
 <div className='slytherin-cards'>
   {active === "FirstCard" && 
-  <card className='alWizardDisp , SlytherinDisp'>
+  <div className='alWizardDisp , SlytherinDisp'>
     {wizards.filter((data)=>{
     if (searchTerm === "") {
       return data
@@ -153,9 +153,9 @@ return (
     
     })}
   
-  </card> }
+  </div> }
   {active === "FemaleCard" && 
-  <card className='femaleDisp , SlytherinDisp'>
+  <div className='femaleDisp , SlytherinDisp'>
  {wizards.filter((data)=>{
     if (searchTerm === '' ) {
       return data
@@ -168,9 +168,9 @@ return (
     }
 
  })}
-  </card> }
+  </div> }
   {active === "MaleCard" && 
-  <card className='maleDisp  , SlytherinDisp'>
+  <div className='maleDisp  , SlytherinDisp'>
  {wizards.filter((data)=>{
     if (searchTerm === '' ) {
       return data
@@ -183,9 +183,9 @@ return (
     }
   
  })}
-  </card> }
+  </div> }
   {active === "StaffCard" && 
-  <card className='StaffDisp  , SlytherinDisp'>
+  <div className='StaffDisp  , SlytherinDisp'>
  {wizards.filter((data)=>{
     if (searchTerm === '' ) {
       return data
@@ -196,9 +196,9 @@ return (
      return <button onClick={()=> {setIsOpen(true); setClickedIndex(index)}} > <WizardCard key={index} data={data.name}/> </button>
     }
  })}
-  </card> }
+  </div> }
   {active === "StudentCard" && 
-  <card className='StudentDisp  , SlytherinDisp'>
+  <div className='StudentDisp  , SlytherinDisp'>
  {wizards.filter((data)=>{
     if (searchTerm === '' ) {
       return data
@@ -211,9 +211,9 @@ return (
     }
     return (<div />)
  })}
-  </card> }
+  </div> }
   {active === "HalfBloodCard" && 
-  <card className='StudentDisp  , SlytherinDisp'>
+  <div className='StudentDisp  , SlytherinDisp'>
  {wizards.filter((data)=>{
     if (searchTerm === '' ) {
       return data
@@ -227,9 +227,9 @@ return (
     }
     return (<div />)
  })}
-  </card> }
+  </div> }
   {active === "PureBloodCard" && 
-  <card className='StudentDisp  , SlytherinDisp'>
+  <div className='StudentDisp  , SlytherinDisp'>
  {wizards.filter((data)=>{
     if (searchTerm === '' ) {
       return data
@@ -243,9 +243,9 @@ return (
     }
     return (<div />)
 })}
-  </card> }
+  </div> }
   {active === "MuggleCard" && 
-  <card className='StudentDisp  , SlytherinDisp'>
+  <div className='StudentDisp  , SlytherinDisp'>
  {wizards.filter((data)=>{
     if (searchTerm === '' ) {
       return data
@@ -259,9 +259,9 @@ return (
     }
     return (<div />)
  })}
-  </card> }
+  </div> }
   {active === "HumanCard" && 
-  <card className='StudentDisp , SlytherinDisp'>
+  <div className='StudentDisp , SlytherinDisp'>
  {wizards.filter((data)=>{
     if (searchTerm === '' ) {
       return data
@@ -275,9 +275,9 @@ return (
     }
     return (<div />)
  })}
-  </card> }
+  </div> }
   {active === "OtherCard" && 
-  <card className='StudentDisp , SlytherinDisp'>
+  <div className='StudentDisp , SlytherinDisp'>
  {wizards.filter((data)=>{
     if (searchTerm === '' ) {
       return data
@@ -291,7 +291,7 @@ return (
     }
     return (<div />)
  })}
-  </card> }
+  </div> }
   </div>
   <Quote/>
   

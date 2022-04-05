@@ -2,7 +2,7 @@ import React from 'react'
 
 
 
-export function WizardCard(props,index) {
+export function WizardCard(props) {
 
 
     return (

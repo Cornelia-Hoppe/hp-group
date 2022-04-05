@@ -7,7 +7,7 @@ const MobileNavigation = () => {
   const [open, setOpen] = useState(false);
   const hamburgerIcon = (
     <div className={classes.Hamburger}>
-      <i class="fa-solid fa-bars fa-1x" onClick={() => setOpen(!open)}></i>
+      <i className="fa-solid fa-bars fa-1x" onClick={() => setOpen(!open)}></i>
     </div>
   );
   const closeIcon = (

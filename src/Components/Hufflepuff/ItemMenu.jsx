@@ -10,7 +10,7 @@ const MenuItem = ({ item }) => {
         onClick={() => setIsSubMenuShow(!isSubMenuShow)}
       >
         {item.title == "all" ? ( <> {item.title}</>) 
-          : (  <> {item.title} <i class="fa-solid fa-chevron-down"></i>
+          : (  <> {item.title} <i className="fa-solid fa-chevron-down"></i>
           </>
         )}
       </div>
