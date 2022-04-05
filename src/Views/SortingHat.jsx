@@ -3,7 +3,7 @@ import {Hat} from "../images/images";
 import Random from '../Components/Hat/RandomReturn';
 import HomeNav from "../Components/HomeNav";
 import Quote from "../Components/Quotes";
-import "../styles/Sortinghat.css"
+import "../styles/Hat.css"
 
 function Sortinghat() {
   

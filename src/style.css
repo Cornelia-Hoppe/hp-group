@@ -68,7 +68,7 @@ body {
 }
 .spark-img{
   height: 20vh;
-  bottom: 0%;
+  bottom: 25%;
   position: absolute;
   left: 25%;
 }
@@ -99,6 +99,7 @@ body {
 /* Home-nav styling*/
 
 .home-nav{
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;

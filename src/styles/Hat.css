@@ -2,8 +2,7 @@
 .sortinghat-container {
     font-family: "IM Fell English SC";
     min-height: 100vh;
-    background-image: url(./images/backgrounds/bgBrown.png);
-    text-shadow: #ee6a0c;
+    background-image: url(../images/backgrounds/bgBrown.png);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +23,7 @@
   .sortingbutton {
     padding: 9px;
     width: 20vw;
-    background-color: #1b4b43;
+    background-color: black;
     color: white;
     font-size: 20px;
   }
