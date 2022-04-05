@@ -7,6 +7,27 @@
     animation: fadein 5s;
 }
 
+.ravenclaw-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 4s;
+}
+
+.ravenclaw-header img{
+    width: 100px;
+    animation: fadein 2s;
+}
+
+.ravenclaw-logo{
+    display:flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
 .main-container{
     text-align: center;
     display: flex;

@@ -38,9 +38,9 @@ export default function RavenclawPage()
     return(
         <RavenclawContext.Provider value={{characterList, setFilteredCharacterList}}>
             <div className="Ravenclaw-Page">
-                <header className='gryffindor-header'>
+                <header className='ravenclaw-header'>
                     <Nav />
-                    <div className="hufflepuff-logo">
+                    <div className="ravenclaw-logo">
                     <img src={RavenclawLogo} width="100px"></img>
                     <h3>Ravenclaw house</h3></div>
                 </header>

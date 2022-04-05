@@ -3,8 +3,9 @@ import React, { useEffect } from 'react';
 import { memoryArray } from '../assets/memory.js';
 import Card from '../Components/memory/Card.jsx';
 import "../styles/Memory.css";
+import Quotes from '../Components/Quotes';
+import "../Components/HomeNav";
 import HomeNav from '../Components/HomeNav';
-import Quotes from '../Components/Quotes'
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {

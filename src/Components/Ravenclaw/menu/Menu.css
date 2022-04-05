@@ -19,7 +19,14 @@
     min-width: 15ch;
     max-width: 30ch;
     margin: 4px;
-    background-color: #fff;
-    border: 1px solid black;
+    background-color: rgb(20, 20, 171);
+    border-radius: 10px 10px;
+    padding: 2px 10px 2px 10px;
+    color: #fff;
+    box-shadow: 2px 2px 5px black;
+}
+
+.allButton:hover{
+    color:blue;
 }
 
