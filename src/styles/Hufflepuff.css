@@ -85,17 +85,15 @@ animation: fadein 4s;
   align-items: center;
   justify-content: center;
 }
-/* one filter title */
+
 .filterhp {
   background-color:white;
   color: black;
   text-align: center;
-  /* no margin */
   width: 35vw;
   box-shadow: 5px 5px 10px rgba(14, 13, 13, 0.404);
   cursor: pointer;
 }
-/* hela alltet */
 .filterbtn{
   display: flex;
   flex-direction: column;
@@ -105,9 +103,6 @@ animation: fadein 4s;
   justify-content: center;
  font-size: 16px;
 }
-/* alla dropar nerr */
-
-/* bara dropdown från en */
 .filterbtn ul {
   padding: 9px;
   cursor: pointer;
