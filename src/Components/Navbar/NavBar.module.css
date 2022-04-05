@@ -10,23 +10,18 @@
   list-style: none;
   margin: 0 1rem;
 }
-
-.NavBar .Navigation {
+.NavBar .MobileNavigation {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  position: fixed;
+  left: 0;
 }
-.NavBar .Navigation img{
-padding: 30px;
+.NavBar .Navigation img {
+  padding: 30px;
 }
 .NavBar .Navigation ul {
   display: flex;
   padding: 20px;
   align-items: center;
-}
-
-.NavBar .MobileNavigation {
-  display: none;
 }
 
 .NavBar .MobileNavigation li {
@@ -40,7 +35,6 @@ padding: 30px;
   padding: 80px;
   background-color: black;
   animation: 0.9s slide-right;
-
 }
 
 .NavBar .MobileNavigation .Hamburger {
@@ -48,16 +42,18 @@ padding: 30px;
   cursor: pointer;
   font-size: 35px;
   padding: 20px;
-
 }
-@media (max-width: 800px) {
+.NavBar .Navigation {
+  display: none;
+}
+@media screen and (min-width: 500px) {
   .NavBar .Navigation {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .NavBar .MobileNavigation {
-    display: flex;
-    position: fixed;
-    left: 0; 
+    display: none;
   }
 }
 

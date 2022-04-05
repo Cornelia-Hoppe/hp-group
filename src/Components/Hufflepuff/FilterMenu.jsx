@@ -4,16 +4,15 @@ import MenuItem from "./ItemMenu";
 
 const FilterMenu = (props) => {
   return (
-
-      <ul className="filterbtn">
-        {DropdownMenu.map((item) => {
-          return (
-            <li onClick={props.onClick} key={item.title} >
-              <MenuItem item={item} />
-            </li>
-          );
-        })}
-      </ul>
+    <ul className="filterbtn">
+      {DropdownMenu.map((item) => {
+        return (
+          <li onClick={props.onClick} key={item.title}>
+            <MenuItem item={item} />
+          </li>
+        );
+      })}
+    </ul>
   );
 };
 

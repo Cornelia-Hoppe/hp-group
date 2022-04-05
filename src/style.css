@@ -30,9 +30,6 @@ body {
 }
 
 
-
-
-/*  */
 /*Styling for home  */
 
 .home-body button{
@@ -43,7 +40,7 @@ body {
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 12px 24px;
+  padding: 15px 30px;
   text-align: center;
   border: none;
   clip-path: polygon(7% 0, 93% 0, 100% 50%, 93% 100%, 7% 100%, 0 50%);
@@ -71,7 +68,7 @@ body {
 }
 .spark-img{
   height: 20vh;
-  bottom: 5%;
+  bottom: 0%;
   position: absolute;
   left: 25%;
 }
@@ -82,7 +79,7 @@ body {
 }
 
 .home-buttons{
-  padding-top: 5%;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,5 +114,5 @@ body {
   transition: 300ms;
 }
 .link-b:hover{
-  text-decoration: underline;
+  font-size: 24px;
 }
