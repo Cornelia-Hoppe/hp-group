@@ -6,10 +6,10 @@ export default function Modal(props) {
   const ModalContent = () => {
     return (
       <>
-        <div className="modal" onClick={() => setIsOpen(false)}>
-          <div className="modal-content">
+        <div className="modal-hp" onClick={() => setIsOpen(false)}>
+          <div className="modal-content-hp">
             {props.name}
-            <div className="modal-image">
+            <div className="modal-image-hp">
               {props.image ? (
                 <img src={props.image} alt="no image"></img>
               ) : (
@@ -18,7 +18,7 @@ export default function Modal(props) {
             </div>
             {props.hogwartsStudent === true && <div>Student</div>}
             {props.hogwartsStaff === true && <div>Staff</div>}
-            <ul className="modal-text">
+            <ul className="modal-text-hp">
               <li>
                 {props.gender ? <p> Gender: {props.gender}</p> : "Gender: N/A"}
               </li>
