@@ -6,4 +6,5 @@ export const HouseLogo = require('./logos/allHouses.png');
 
 export const Hat = require("./otherimgs/sortinghat.webp");
 export const DeathlyHallows = require("./otherimgs/deathly-hallows.png");
+export const Sparkel = require("./backgrounds/WG8P.gif");
 

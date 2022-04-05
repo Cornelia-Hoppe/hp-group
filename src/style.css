@@ -47,8 +47,8 @@ body {
   text-align: center;
   border: none;
   clip-path: polygon(7% 0, 93% 0, 100% 50%, 93% 100%, 7% 100%, 0 50%);
-  background-color: rgb(49, 49, 49);
-  background-image: radial-gradient(250% 70% at center 20%, rgb(48, 48, 48) -30%, rgb(54, 54, 54) 49%, rgb(48, 48, 48) 50%, rgb(49, 49, 49) 150%);
+  background-color: rgb(40, 4, 50);
+  background-image: radial-gradient(250% 70% at center 20%, rgb(40, 4, 50) -30%, rgb(54, 12, 50) 49%, rgb(40, 4, 50) 50%, rgb(40, 4, 50) 150%);
   background-repeat: no-repeat;
   transition: background-position-y ease-in-out 250ms;
   width: 200px;
@@ -64,11 +64,23 @@ body {
  }
 .home-body{
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(./images/backgrounds/bgHog.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(./images/backgrounds/home3.png);
   background-repeat: no-repeat;
   background-size: contain, cover;
   min-height: 100vh;
 }
+.spark-img{
+  height: 20vh;
+  bottom: 5%;
+  position: absolute;
+  left: 25%;
+}
+@media screen and (min-width: 500px) {
+  .spark-img {
+    left: 45%;
+  }
+}
+
 .home-buttons{
   padding-top: 5%;
   display: flex;
