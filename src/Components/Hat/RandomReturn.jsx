@@ -22,13 +22,14 @@ export default function Random() {
   if (loading) return <Loading />;
 
   return (
-      <div className="house-container">
-        {!show &&  <h1>Which house will the sorting hat choose for you?</h1>}
-        {!show && <button className="sortingbutton" onClick={Sort}>Begin</button>}
-        {show && <House />}
-      </div>
-   
+    <div className="house-container">
+      {!show && <h1>Which house will the sorting hat choose for you?</h1>}
+      {!show && (
+        <button className="sortingbutton" onClick={Sort}>
+          Begin
+        </button>
+      )}
+      {show && <House />}
+    </div>
   );
 }
-
-

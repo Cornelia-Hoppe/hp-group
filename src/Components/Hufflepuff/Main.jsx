@@ -3,7 +3,7 @@ import { useState, useContext, useEffect } from "react";
 import Modal from "./Modal";
 import SearchBar from "./SearchBar";
 import { ApiContext } from "./ApiProvider";
-import FilterMenu from "./FilterMenu"
+import FilterMenu from "./FilterMenu";
 export default function Main() {
   const [[characters, setCharacters], [filteredList, setFilteredList]] =
     useContext(ApiContext);
@@ -48,10 +48,8 @@ export default function Main() {
           (item) => item.hogwartsStaff === true
         );
         return staff;
-        case "All":
-        const All = filteredData.filter(
-          (item) => item.hogwartsStaff === true
-        );
+      case "All":
+        const All = filteredData.filter((item) => item.hogwartsStaff === true);
         return staff;
     }
   }
@@ -64,20 +62,14 @@ export default function Main() {
     setFilteredList(filteredData);
   }, [selectedFilter]);
 
- 
-
   return (
     <div className="main-hufflepuff">
       <div className="searchcontainer-hufflepuff">
-       
         <SearchBar Search={setSearchTerm} />
-        </div>
+      </div>
       <div className="filter-container">
-       
         <FilterMenu onClick={handleChange} />
       </div>
-
-   
 
       <div className="character-list">
         {filteredList

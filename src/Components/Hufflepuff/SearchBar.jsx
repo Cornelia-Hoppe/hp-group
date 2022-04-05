@@ -3,9 +3,10 @@ import React from "react";
 export default function SearchBar(props) {
   return (
     <input
-    id="search-hufflepuff"
+      id="search-hufflepuff"
       type="text"
-      autoFocus required
+      autoFocus
+      required
       placeholder="Search character..."
       value={props.searchTerm}
       onChange={(e) => {
@@ -14,4 +15,3 @@ export default function SearchBar(props) {
     />
   );
 }
-
