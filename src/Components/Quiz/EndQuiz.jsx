@@ -44,7 +44,7 @@ export default function EndQuiz() {
 
   return (
     <div className='quizend quiz-main--content'>
-      <h3>{score} out of total {Questions.length} was correct</h3>
+      <h3>{score} of {Questions.length} questions was correct</h3>
       <p>{scoreQuote()}</p>
       <button className="start-end-button quiz-main--button" onClick={restartQuiz}>Try again!</button>
     </div>
