@@ -20,14 +20,17 @@
     align-items: center;
     animation: fadein 4s;
 }
-.gryffindor-header--logo{
+.gryffindor-header--logo {
     text-align: center;
     margin-bottom: 1rem;
     color: var(--color-orange);
 }
-.gryffindor-header img{
+.gryffindor-header--logo > img{
     width: 100px;
-    animation: fadein 2s;
+}
+
+.gryffindor-header img{
+    animation: fadein 2s;    
 }
 
 .gryffindor-main{
